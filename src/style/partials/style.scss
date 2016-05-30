@@ -2,11 +2,20 @@ $md-font:       16px !default;
 $lg-font:       18px !default;
 $sm-font:       14px !default;
 
+%16-f {font-size: 1rem;}
+%18-f {font-size: 1.125rem;}
+%36-f {font-size: 2.25rem;}
+%108-f {font-size: 6.75rem;}
+
+$yellow:        #dfc90b !default;
+
 html {
     font-size: $md-font;
 }
 
 header {
+    position: fixed;
+    width: 100%;
     .bg {
         width: 100%;
         height: 29px;
@@ -14,13 +23,97 @@ header {
         opacity: 0.83;
         position: absolute;
     }
-    .navbar-right {
-        .contact {
-            color: #fff;
-            text-align: right;
-            font-size: 1rem;
-            //font-weight: bold;
-            padding: 3px 0;
+    .navbar {
+        .navbar-right {
+            .contact {
+                color: #fff;
+                text-align: right;
+                font-size: 1rem;
+                //font-weight: bold;
+                padding: 3px 0;
+            }
         }
     }
+}
+
+#bmw_01 {
+    background-image:url('../img/bg-01.jpg');
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    min-height: 730px;
+    height: 100vh;
+    .head-wrap {
+        display: table;
+        height: 40vh;
+        width: 100%;
+        .head {
+            display: table-cell;
+            vertical-align: bottom;
+            height: 100%;
+            width: 100%;
+            .phone {
+                display: block;
+                float: right;
+                margin-top: 45px;
+                text-align: right;
+                p {
+                    @extend %36-f;
+                    color: #fff;
+                    font-weight: bold;
+                    text-align: right;
+                    line-height: 1;
+                    margin: 0;
+                    span {
+                        @extend %18-f;
+                    }
+                }
+                a {
+                    @extend %16-f;
+                    color: $yellow;
+                    text-decoration: underline;
+                    text-align: right;
+                    line-height: 1;
+                }
+            }
+            h1 {
+                @extend %108-f;
+                text-transform: uppercase;
+                font-weight: bold;
+                color: #fff;
+                text-align: center;
+                line-height: 1;
+                margin: 0;
+                margin-top: 120px;
+                span {
+                    background: #000;
+                    color: #fff;
+                    display: inline-block;
+                    padding: 10px;
+                }
+            }
+            .subtitle {
+                @extend %36-f;
+                text-align: center;
+                color: #fff;
+                text-transform: uppercase;
+                font-weight: bold;
+            }
+        }
+    }
+    .odc-wrap {
+        display: table;
+        height: 60vh;
+        width: 100%;
+        .odc {
+            display: table-cell;
+            vertical-align: bottom;
+            width: 100%;
+            height: 100%;
+            background-image: url('../img/bg-01-road.jpg');
+            background-repeat: repeat-x;
+            background-position: bottom center;
+        }        
+    }
+
 }

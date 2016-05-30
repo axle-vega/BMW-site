@@ -1483,9 +1483,25 @@ to{opacity:1}
 .pushy-submenu ul{padding-left:15px}
 .pushy-submenu>a:after{content:'';display:block;height:11px;width:8px;position:absolute;top:50%;right:15px;background:url(img/arrow.svg) no-repeat;-webkit-transform:translateY(-50%);transform:translateY(-50%);-webkit-transition:-webkit-transform .2s;transition:-webkit-transform .2s;transition:transform .2s;transition:transform .2s,-webkit-transform .2s}
 .pushy-submenu-open a:after{-webkit-transform:translateY(-50%) rotate(90deg);transform:translateY(-50%) rotate(90deg)}
+#bmw_01 .head-wrap .head .phone a{font-size:1rem}
+#bmw_01 .head-wrap .head .phone p span{font-size:1.125rem}
+#bmw_01 .head-wrap .head .phone p,#bmw_01 .head-wrap .head .subtitle{font-size:2.25rem}
+#bmw_01 .head-wrap .head h1{font-size:6.75rem}
 html{-webkit-tap-highlight-color:transparent;font-size:16px}
+header{position:fixed;width:100%}
 header .bg{width:100%;height:29px;background-color:#000;opacity:.83;position:absolute}
-header .navbar-right .contact{color:#fff;text-align:right;font-size:1rem;padding:3px 0}
+header .navbar .navbar-right .contact{color:#fff;text-align:right;font-size:1rem;padding:3px 0}
+#bmw_01{background-image:url(../img/bg-01.jpg);background-repeat:no-repeat;background-position:center top;background-size:cover;min-height:730px;height:100vh}
+#bmw_01 .head-wrap{display:table;height:40vh;width:100%}
+#bmw_01 .head-wrap .head{display:table-cell;vertical-align:bottom;height:100%;width:100%}
+#bmw_01 .head-wrap .head .phone{display:block;float:right;margin-top:45px;text-align:right}
+#bmw_01 .head-wrap .head .phone p{color:#fff;font-weight:700;text-align:right;line-height:1;margin:0}
+#bmw_01 .head-wrap .head .phone a{color:#dfc90b;text-decoration:underline;text-align:right;line-height:1}
+#bmw_01 .head-wrap .head .subtitle,#bmw_01 .head-wrap .head h1{text-align:center;text-transform:uppercase;font-weight:700;color:#fff}
+#bmw_01 .head-wrap .head h1{line-height:1;margin:120px 0 0}
+#bmw_01 .head-wrap .head h1 span{background:#000;color:#fff;display:inline-block;padding:10px}
+#bmw_01 .odc-wrap{display:table;height:60vh;width:100%}
+#bmw_01 .odc-wrap .odc{display:table-cell;vertical-align:bottom;width:100%;height:100%;background-image:url(../img/bg-01-road.jpg);background-repeat:repeat-x;background-position:bottom center}
 /*! Pushy - v1.0.0 - 2016-3-1
 * Pushy is a responsive off-canvas navigation menu using CSS transforms & transitions.
 * https://github.com/christophery/pushy/
