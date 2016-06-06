@@ -9,12 +9,20 @@ $sm-font:       14px !default;
 
 $yellow:        #dfc90b !default;
 
-html {
-    font-size: $md-font;
+html {font-size: $md-font;}
+
+.title {
+    font-size: 5.62rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #000;
 }
 
+#menu-container {display: none;}
+
 header {
-    position: fixed;
+    position: absolute;
     width: 100%;
     .bg {
         width: 100%;
@@ -29,7 +37,6 @@ header {
                 color: #fff;
                 text-align: right;
                 font-size: 1rem;
-                //font-weight: bold;
                 padding: 3px 0;
             }
         }
@@ -41,12 +48,12 @@ header {
     background-repeat: no-repeat;
     background-position: center top;
     background-size: cover;
-    min-height: 730px;
-    height: 100vh;
+    //height: 100vh;
     .head-wrap {
         display: table;
-        height: 40vh;
+        //height: 40vh;
         width: 100%;
+        padding-bottom: 25px;
         .head {
             display: table-cell;
             vertical-align: bottom;
@@ -103,7 +110,7 @@ header {
     }
     .odc-wrap {
         display: table;
-        height: 60vh;
+        //height: 60vh;
         width: 100%;
         .odc {
             display: table-cell;
@@ -113,7 +120,147 @@ header {
             background-image: url('../img/bg-01-road.jpg');
             background-repeat: repeat-x;
             background-position: bottom center;
+            .offer {
+                border: 10px $yellow solid;
+                width: 50%;
+                max-width: 638px;
+                display: block;
+                float: left;
+                position: absolute;
+                padding: 25px;
+                .p01 {
+                    color: #fff;
+                    font-size: 2.62rem;
+                    font-weight: bold;
+                    text-transform: uppercase;
+                    margin: 0;
+                    .yellow {
+                        color: $yellow;
+                    }
+                }
+                .p02 {
+                    font-size: 1.5rem;
+                    color: #fff;
+                    line-height: 1;
+                }
+                form {
+                    input {
+                        font-size: 1.12rem;
+                        color: #a4a4a4;
+                        background-color: transparent;
+                        width: 300px;
+                        border: 1px #e2e2e2 solid;
+                        padding: 5px 15px;
+                        margin-top: 10px;
+                        margin-bottom: 20px;
+                    }
+                    button {
+                        font-size: 1.5rem;
+                        color: #fff;
+                        background: #c52809;
+                        border-radius: 4px;
+                        padding: 3px 12px;
+                        border: none;
+                    }
+                }
+            }
+            .car {
+                width: 884px;
+                height: 388px;
+                background-image: url('../img/bg-01-car.png');
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: contain;
+                display: block;
+                float: right;
+                position: relative;
+                z-index: 100;
+                margin-right: -100px;
+            }
         }        
     }
+}
 
+#bmw_02 {
+    background-image: url('../img/bg-02.jpg');
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 5vh 0;
+    .bullets-wrap {
+        height: 50vh;
+        display: table;
+        width: 55%;
+        float: right;
+        .bullets {
+            display: table-cell;
+            vertical-align: middle;
+            height: 100%;
+            ul {
+                list-style: none;
+                li {
+                    font-size: 1.5rem;
+                    font-weight: bold;
+                    color: #fff;
+                    background: #000;
+                    margin: 20px 0;
+                    padding: 0px;
+                    line-height: 3;
+                    div {
+                        display: inline-block;
+                        width: 120px;
+                        font-size: 3.5rem;
+                        text-align: center;
+                        line-height: 2;
+                        padding: 0px 25px;
+                        -webkit-transform: skewX(-25deg);
+                        transform: skewX(-25deg);
+                        margin-left: -30px;
+                        p {
+                            -webkit-transform: skewX(25deg);
+                            transform: skewX(25deg);
+                            margin: 0;
+                        }
+                    }
+                    span {
+                        vertical-align: super;
+                        font-weight: 100;
+                        padding-left: 40px;
+                    }
+                    &:nth-child(1) {
+                        margin-left: 0px;
+                        div {
+                            background: #1f68c3;
+                        }
+                    }
+                    &:nth-child(2) {
+                        margin-left: -60px;
+                        div {
+                            background: #dfc90b;
+                        }
+                    }
+                    &:nth-child(3) {
+                        margin-left: -120px;
+                        div {
+                            background: #c52809;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+#bmw_03 {
+    padding: 4vh 0;
+    height: 60vh;
+    .bmw-car {
+        width: 100%;
+        max-width: 1155px;
+        height: 694px;
+        background-image: url('../img/bg-03.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
 }

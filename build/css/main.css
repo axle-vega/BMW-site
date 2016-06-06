@@ -2,6 +2,7 @@
 .label,sub,sup{vertical-align:baseline}
 button,hr,input{overflow:visible}
 .navbar-fixed-bottom .navbar-collapse,.navbar-fixed-top .navbar-collapse,.pre-scrollable{max-height:340px}
+.invisible,.pushy{visibility:hidden}
 article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary{display:block}
 audio,canvas,progress,video{display:inline-block;vertical-align:baseline}
 a{-webkit-text-decoration-skip:objects;background-color:transparent}
@@ -74,7 +75,6 @@ h2,h3{page-break-after:avoid}
 .img-thumbnail,body{background-color:#fff}
 @font-face{font-family:'Glyphicons Halflings';src:url(../fonts/glyphicons-halflings-regular.eot);src:url(../fonts/glyphicons-halflings-regular.eot?#iefix) format('embedded-opentype'),url(../fonts/glyphicons-halflings-regular.woff2) format('woff2'),url(../fonts/glyphicons-halflings-regular.woff) format('woff'),url(../fonts/glyphicons-halflings-regular.ttf) format('truetype'),url(../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular) format('svg')}
 .glyphicon{position:relative;top:1px;display:inline-block;font-family:'Glyphicons Halflings';font-weight:400;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
-.popover,.tooltip,body{font-family:"PT Sans Narrow",Arial,sans-serif}
 .glyphicon-asterisk:before{content:"\002a"}
 .glyphicon-plus:before{content:"\002b"}
 .glyphicon-eur:before,.glyphicon-euro:before{content:"\20ac"}
@@ -334,7 +334,7 @@ h2,h3{page-break-after:avoid}
 .glyphicon-menu-down:before{content:"\e259"}
 .glyphicon-menu-up:before{content:"\e260"}
 *,:after,:before{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}
-body{margin:0;font-size:14px;line-height:1.42857143;color:#333}
+body{margin:0;font-family:"PT Sans Narrow",Arial,sans-serif;font-size:14px;line-height:1.42857143;color:#333}
 button,input,select,textarea{font-family:inherit;font-size:inherit;line-height:inherit}
 a{color:#337ab7;text-decoration:none}
 a:focus,a:hover{color:#23527c;text-decoration:underline}
@@ -1299,7 +1299,7 @@ a.list-group-item-danger.active,a.list-group-item-danger.active:focus,a.list-gro
 .well-lg{padding:24px;border-radius:6px}
 .well-sm{padding:9px;border-radius:3px}
 .close{float:right;font-size:21px;line-height:1;color:#000;text-shadow:0 1px 0 #fff;filter:alpha(opacity=20);opacity:.2}
-.popover,.tooltip{font-style:normal;font-weight:400;line-height:1.42857143;text-shadow:none;text-transform:none;letter-spacing:normal;word-break:normal;word-spacing:normal;word-wrap:normal;white-space:normal;line-break:auto;text-decoration:none}
+.popover,.tooltip{font-family:"PT Sans Narrow",Arial,sans-serif;font-style:normal;font-weight:400;line-height:1.42857143;text-shadow:none;text-transform:none;letter-spacing:normal;word-break:normal;word-spacing:normal;word-wrap:normal;white-space:normal;line-break:auto;text-decoration:none}
 .close:focus,.close:hover{color:#000;text-decoration:none;cursor:pointer;filter:alpha(opacity=50);opacity:.5}
 button.close{-webkit-appearance:none;padding:0;cursor:pointer;background:0 0;border:0}
 .modal{position:fixed;z-index:1050;display:none;-webkit-overflow-scrolling:touch;outline:0}
@@ -1345,7 +1345,7 @@ button.close{-webkit-appearance:none;padding:0;cursor:pointer;background:0 0;bor
 .tooltip.bottom-left .tooltip-arrow{right:5px;margin-top:-5px}
 .tooltip.bottom-right .tooltip-arrow{left:5px;margin-top:-5px}
 .popover{position:absolute;top:0;left:0;z-index:1060;display:none;max-width:276px;padding:1px;font-size:14px;text-align:left;text-align:start;background-color:#fff;-webkit-background-clip:padding-box;background-clip:padding-box;border:1px solid #ccc;border:1px solid rgba(0,0,0,.2);border-radius:6px;-webkit-box-shadow:0 5px 10px rgba(0,0,0,.2);box-shadow:0 5px 10px rgba(0,0,0,.2)}
-.carousel-caption,.carousel-control{color:#fff;text-align:center;text-shadow:0 1px 2px rgba(0,0,0,.6)}
+.carousel-caption,.carousel-control{color:#fff;text-shadow:0 1px 2px rgba(0,0,0,.6);text-align:center}
 .popover.top{margin-top:-10px}
 .popover.right{margin-left:10px}
 .popover.bottom{margin-top:10px}
@@ -1410,7 +1410,6 @@ button.close{-webkit-appearance:none;padding:0;cursor:pointer;background:0 0;bor
 .hide{display:none!important}
 .show{display:block!important}
 .hidden,.visible-lg,.visible-lg-block,.visible-lg-inline,.visible-lg-inline-block,.visible-md,.visible-md-block,.visible-md-inline,.visible-md-inline-block,.visible-sm,.visible-sm-block,.visible-sm-inline,.visible-sm-inline-block,.visible-xs,.visible-xs-block,.visible-xs-inline,.visible-xs-inline-block{display:none!important}
-.invisible{visibility:hidden}
 .text-hide{font:0/0 a;color:transparent;background-color:transparent;border:0}
 .affix{position:fixed}
 @-ms-viewport{width:device-width}
@@ -1488,25 +1487,50 @@ to{opacity:1}
 #bmw_01 .head-wrap .head .phone p,#bmw_01 .head-wrap .head .subtitle{font-size:2.25rem}
 #bmw_01 .head-wrap .head h1{font-size:6.75rem}
 html{-webkit-tap-highlight-color:transparent;font-size:16px}
-header{position:fixed;width:100%}
+.title{font-size:5.62rem;text-align:center;text-transform:uppercase;font-weight:700;color:#000}
+#menu-container{display:none}
+header{position:absolute;width:100%}
 header .bg{width:100%;height:29px;background-color:#000;opacity:.83;position:absolute}
 header .navbar .navbar-right .contact{color:#fff;text-align:right;font-size:1rem;padding:3px 0}
-#bmw_01{background-image:url(../img/bg-01.jpg);background-repeat:no-repeat;background-position:center top;background-size:cover;min-height:730px;height:100vh}
-#bmw_01 .head-wrap{display:table;height:40vh;width:100%}
+#bmw_01{background-image:url(../img/bg-01.jpg);background-repeat:no-repeat;background-position:center top;background-size:cover}
+#bmw_01 .head-wrap{display:table;width:100%;padding-bottom:25px}
 #bmw_01 .head-wrap .head{display:table-cell;vertical-align:bottom;height:100%;width:100%}
 #bmw_01 .head-wrap .head .phone{display:block;float:right;margin-top:45px;text-align:right}
 #bmw_01 .head-wrap .head .phone p{color:#fff;font-weight:700;text-align:right;line-height:1;margin:0}
 #bmw_01 .head-wrap .head .phone a{color:#dfc90b;text-decoration:underline;text-align:right;line-height:1}
-#bmw_01 .head-wrap .head .subtitle,#bmw_01 .head-wrap .head h1{text-align:center;text-transform:uppercase;font-weight:700;color:#fff}
-#bmw_01 .head-wrap .head h1{line-height:1;margin:120px 0 0}
+#bmw_01 .head-wrap .head h1{text-transform:uppercase;font-weight:700;color:#fff;text-align:center;line-height:1;margin:120px 0 0}
 #bmw_01 .head-wrap .head h1 span{background:#000;color:#fff;display:inline-block;padding:10px}
-#bmw_01 .odc-wrap{display:table;height:60vh;width:100%}
+#bmw_01 .head-wrap .head .subtitle{text-align:center;color:#fff;text-transform:uppercase;font-weight:700}
+#bmw_01 .odc-wrap{display:table;width:100%}
 #bmw_01 .odc-wrap .odc{display:table-cell;vertical-align:bottom;width:100%;height:100%;background-image:url(../img/bg-01-road.jpg);background-repeat:repeat-x;background-position:bottom center}
+#bmw_01 .odc-wrap .odc .offer{border:10px solid #dfc90b;width:50%;max-width:638px;display:block;float:left;position:absolute;padding:25px}
+#bmw_01 .odc-wrap .odc .offer .p01{color:#fff;font-size:2.62rem;font-weight:700;text-transform:uppercase;margin:0}
+#bmw_01 .odc-wrap .odc .offer .p01 .yellow{color:#dfc90b}
+#bmw_01 .odc-wrap .odc .offer .p02{font-size:1.5rem;color:#fff;line-height:1}
+#bmw_01 .odc-wrap .odc .offer form input{font-size:1.12rem;color:#a4a4a4;background-color:transparent;width:300px;border:1px solid #e2e2e2;padding:5px 15px;margin-top:10px;margin-bottom:20px}
+#bmw_01 .odc-wrap .odc .offer form button{font-size:1.5rem;color:#fff;background:#c52809;border-radius:4px;padding:3px 12px;border:none}
+#bmw_01 .odc-wrap .odc .car{width:884px;height:388px;background-image:url(../img/bg-01-car.png);background-repeat:no-repeat;background-position:center;background-size:contain;display:block;float:right;position:relative;z-index:100;margin-right:-100px}
+#bmw_02{background-image:url(../img/bg-02.jpg);background-position:center top;background-repeat:no-repeat;background-size:cover;padding:5vh 0}
+#bmw_02 .bullets-wrap{height:50vh;display:table;width:55%;float:right}
+#bmw_02 .bullets-wrap .bullets{display:table-cell;vertical-align:middle;height:100%}
+#bmw_02 .bullets-wrap .bullets ul{list-style:none}
+#bmw_02 .bullets-wrap .bullets ul li{font-size:1.5rem;font-weight:700;color:#fff;background:#000;margin:20px 0;padding:0;line-height:3}
+#bmw_02 .bullets-wrap .bullets ul li div{display:inline-block;width:120px;font-size:3.5rem;text-align:center;line-height:2;padding:0 25px;-webkit-transform:skewX(-25deg);transform:skewX(-25deg);margin-left:-30px}
+#bmw_02 .bullets-wrap .bullets ul li div p{-webkit-transform:skewX(25deg);transform:skewX(25deg);margin:0}
+#bmw_02 .bullets-wrap .bullets ul li span{vertical-align:super;font-weight:100;padding-left:40px}
+#bmw_02 .bullets-wrap .bullets ul li:nth-child(1){margin-left:0}
+#bmw_02 .bullets-wrap .bullets ul li:nth-child(1) div{background:#1f68c3}
+#bmw_02 .bullets-wrap .bullets ul li:nth-child(2){margin-left:-60px}
+#bmw_02 .bullets-wrap .bullets ul li:nth-child(2) div{background:#dfc90b}
+#bmw_02 .bullets-wrap .bullets ul li:nth-child(3){margin-left:-120px}
+#bmw_02 .bullets-wrap .bullets ul li:nth-child(3) div{background:#c52809}
+#bmw_03{padding:4vh 0;height:60vh}
+#bmw_03 .bmw-car{width:100%;max-width:1155px;height:694px;background-image:url(../img/bg-03.jpg);background-position:center;background-repeat:no-repeat;background-size:contain}
 /*! Pushy - v1.0.0 - 2016-3-1
 * Pushy is a responsive off-canvas navigation menu using CSS transforms & transitions.
 * https://github.com/christophery/pushy/
 * by Christopher Yee */
-.pushy{position:fixed;width:230px;height:100%;top:0;padding-top:60px;z-index:9999;background:#191918;overflow:auto;visibility:hidden;-webkit-overflow-scrolling:touch}
+.pushy{position:fixed;width:230px;height:100%;top:0;padding-top:60px;z-index:9999;background:#191918;overflow:auto;-webkit-overflow-scrolling:touch}
 .pushy .menu-btn{margin-top:-50px;border:none}
 .pushy .menu-list{z-index:100;position:relative}
 .pushy a{display:block;color:#fff;padding:7px 20px;text-decoration:none;outline:0;line-height:1.1;font-size:1.4rem;background:#000}
@@ -1552,3 +1576,87 @@ header .navbar .navbar-right .contact{color:#fff;text-align:right;font-size:1rem
 .pushy-contacts .socials ul li .fb{background-image:url(../img/svg/facebook-circular-logo.svg)}
 .pushy-contacts .socials ul li .inst{background-image:url(../img/svg/instagram-logo.svg)}
 .pushy-contacts .socials ul li .ok{background-image:url(../img/svg/odnoklassniki-logo.svg)}
+@media (max-width:480px){.title{font-size:2rem}
+#menu-container{display:inline-block;float:right;width:40px;height:40px;font-size:1.5rem;text-align:center;padding-top:6px;color:#fff}
+#bmw_01 .head-wrap .head .phone,header .navbar{display:none}
+header .bg{height:20px}
+#bmw_01 .head-wrap{padding-bottom:5px}
+#bmw_01 .head-wrap .head h1{font-size:2rem;margin-top:35px}
+#bmw_01 .head-wrap .head h1 span{padding:0 10px}
+#bmw_01 .head-wrap .head .subtitle{font-size:1.8rem}
+#bmw_01 .odc-wrap .odc{background-image:none}
+#bmw_01 .odc-wrap .odc .car{width:100%;margin:0;height:165px;background-position:center bottom}
+#bmw_01 .odc-wrap .odc .offer{width:95%;margin:0 auto;display:block;position:initial;float:none;border:5px solid #dfc90b;padding:10px 20px}
+#bmw_01 .odc-wrap .odc .offer .p01{font-size:1.8rem;text-align:center}
+#bmw_01 .odc-wrap .odc .offer .p02{font-size:1.2rem;text-align:center}
+#bmw_01 .odc-wrap .odc .offer form input{width:100%;font-size:1rem}
+#bmw_01 .odc-wrap .odc .offer form .button-wrap{text-align:center}
+#bmw_02 .bullets-wrap{height:auto;width:100%}
+#bmw_02 .bullets-wrap .bullets ul li{font-size:1rem;line-height:2;margin-left:0!important}
+#bmw_02 .bullets-wrap .bullets ul li span{padding-left:15px}
+#bmw_02 .bullets-wrap .bullets ul li div{width:50px;font-size:1.5rem;line-height:2;padding:0 5px}
+}
+@media (min-width:481px) and (max-width:767px){.title{font-size:2rem}
+#menu-container{display:inline-block;float:right;width:40px;height:40px;font-size:1.5rem;text-align:center;padding-top:6px;color:#fff}
+#bmw_01 .head-wrap .head .phone,header .navbar{display:none}
+header .bg{height:20px}
+#bmw_01 .head-wrap{padding-bottom:5px}
+#bmw_01 .head-wrap .head h1{font-size:2rem;margin-top:35px}
+#bmw_01 .head-wrap .head h1 span{padding:0 10px}
+#bmw_01 .head-wrap .head .subtitle{font-size:1.8rem}
+#bmw_01 .odc-wrap .odc{background-image:none}
+#bmw_01 .odc-wrap .odc .car{width:100%;margin:0;height:165px;background-position:center bottom}
+#bmw_01 .odc-wrap .odc .offer{width:95%;margin:0 auto;display:block;position:initial;float:none;border:5px solid #dfc90b;padding:10px 20px}
+#bmw_01 .odc-wrap .odc .offer .p01{font-size:1.8rem;text-align:center}
+#bmw_01 .odc-wrap .odc .offer .p02{font-size:1.2rem;text-align:center}
+#bmw_01 .odc-wrap .odc .offer form input{width:100%;font-size:1rem}
+#bmw_01 .odc-wrap .odc .offer form .button-wrap{text-align:center}
+#bmw_02 .bullets-wrap{height:auto;width:100%}
+#bmw_02 .bullets-wrap .bullets ul li{font-size:1rem;line-height:2;margin-left:0!important}
+#bmw_02 .bullets-wrap .bullets ul li span{padding-left:15px}
+#bmw_02 .bullets-wrap .bullets ul li div{width:50px;font-size:1.5rem;line-height:2;padding:0 5px}
+}
+@media (min-width:768px) and (max-width:990px){.title{font-size:3rem}
+#menu-container{display:inline-block;float:right;width:40px;height:40px;font-size:1.5rem;text-align:center;padding-top:6px;color:#fff}
+header .bg{height:30px}
+header .navbar{display:block}
+#bmw_01 .head-wrap .head .phone,header .navbar .tablet-none{display:none}
+#bmw_01{padding-bottom:30px}
+#bmw_01 .head-wrap{padding-bottom:5px}
+#bmw_01 .head-wrap .head h1{font-size:3rem;margin-top:60px}
+#bmw_01 .head-wrap .head h1 span{padding:0 10px}
+#bmw_01 .head-wrap .head .subtitle{font-size:3rem}
+#bmw_01 .odc-wrap .odc{background-image:none}
+#bmw_01 .odc-wrap .odc .car{display:none;width:100%;margin:0;height:165px;background-position:center bottom}
+#bmw_01 .odc-wrap .odc .offer{width:60%;margin:0 auto;display:block;position:initial;float:none;border:5px solid #dfc90b;padding:10px 20px}
+#bmw_01 .odc-wrap .odc .offer .p01{font-size:2rem;text-align:center}
+#bmw_01 .odc-wrap .odc .offer .p02{font-size:1.2rem;text-align:center}
+#bmw_01 .odc-wrap .odc .offer form input{width:75%;margin:20px auto 0;display:block;font-size:1rem}
+#bmw_01 .odc-wrap .odc .offer form .button-wrap{text-align:center}
+#bmw_02 .bullets-wrap{height:auto;width:60%}
+#bmw_02 .bullets-wrap .bullets ul li{font-size:1rem;line-height:2;margin-left:0!important}
+#bmw_02 .bullets-wrap .bullets ul li span{padding-left:15px}
+#bmw_02 .bullets-wrap .bullets ul li div{width:50px;font-size:1.5rem;line-height:2;padding:0 5px}
+}
+@media (min-width:991px) and (max-width:1199px){.title{font-size:3rem}
+#menu-container{display:inline-block;float:right;width:40px;height:40px;font-size:1.5rem;text-align:center;padding-top:6px;color:#fff}
+header .bg{height:30px}
+header .navbar{display:block}
+#bmw_01 .head-wrap .head .phone,header .navbar .tablet-none{display:none}
+#bmw_01{padding-bottom:30px}
+#bmw_01 .head-wrap{padding-bottom:5px}
+#bmw_01 .head-wrap .head h1{font-size:3rem;margin-top:60px}
+#bmw_01 .head-wrap .head h1 span{padding:0 10px}
+#bmw_01 .head-wrap .head .subtitle{font-size:3rem}
+#bmw_01 .odc-wrap .odc{background-image:none}
+#bmw_01 .odc-wrap .odc .car{display:none;width:100%;margin:0;height:165px;background-position:center bottom}
+#bmw_01 .odc-wrap .odc .offer{width:60%;margin:0 auto;display:block;position:initial;float:none;border:5px solid #dfc90b;padding:10px 20px}
+#bmw_01 .odc-wrap .odc .offer .p01{font-size:2rem;text-align:center}
+#bmw_01 .odc-wrap .odc .offer .p02{font-size:1.2rem;text-align:center}
+#bmw_01 .odc-wrap .odc .offer form input{width:75%;margin:20px auto 0;display:block;font-size:1rem}
+#bmw_01 .odc-wrap .odc .offer form .button-wrap{text-align:center}
+#bmw_02 .bullets-wrap{height:auto;width:60%}
+#bmw_02 .bullets-wrap .bullets ul li{font-size:1rem;line-height:2;margin-left:0!important}
+#bmw_02 .bullets-wrap .bullets ul li span{padding-left:15px}
+#bmw_02 .bullets-wrap .bullets ul li div{width:50px;font-size:1.5rem;line-height:2;padding:0 5px}
+}
