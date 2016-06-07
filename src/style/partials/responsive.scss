@@ -217,6 +217,45 @@
             }
         }
     }
+    #bmw_08 {
+        .odc-wrap {
+            .odc {
+                background-image: none;
+                .car {
+                    width: 100%;
+                    margin: 0;
+                    height: 165px;
+                    background-position: center bottom;
+                }
+                .offer {
+                    width: 95%;
+                    margin: 0 auto;
+                    display: block;
+                    position: initial;
+                    float: none;
+                    border: 5px solid #dfc90b;
+                    padding: 10px 20px;
+                    .p01 {
+                        font-size: 1.8rem;
+                        text-align: center;
+                    }
+                    .p02 {
+                        font-size: 1.2rem;
+                        text-align: center;
+                    }
+                    form {
+                        input {
+                            width: 100%;
+                            font-size: 1rem;
+                        }
+                        .button-wrap {
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
 @media (min-width: 481px) and (max-width: 767px) {
@@ -386,6 +425,45 @@
                     font-size: 1.2rem;
                     padding: 0 15px;
                     br {display: none;}
+                }
+            }
+        }
+    }
+    #bmw_08 {
+        .odc-wrap {
+            .odc {
+                background-image: none;
+                .car {
+                    width: 100%;
+                    margin: 0;
+                    height: 165px;
+                    background-position: center bottom;
+                }
+                .offer {
+                    width: 95%;
+                    margin: 0 auto;
+                    display: block;
+                    position: initial;
+                    float: none;
+                    border: 5px solid #dfc90b;
+                    padding: 10px 20px;
+                    .p01 {
+                        font-size: 1.8rem;
+                        text-align: center;
+                    }
+                    .p02 {
+                        font-size: 1.2rem;
+                        text-align: center;
+                    }
+                    form {
+                        input {
+                            width: 100%;
+                            font-size: 1rem;
+                        }
+                        .button-wrap {
+                            text-align: center;
+                        }
+                    }
                 }
             }
         }
@@ -560,6 +638,48 @@
             }
         }
     }
+    #bmw_08 {
+        .odc-wrap {
+            .odc {
+                background-image: none;
+                .car {
+                    display: none;
+                    width: 100%;
+                    margin: 0;
+                    height: 165px;
+                    background-position: center bottom;
+                }
+                .offer {
+                    width: 60%;
+                    margin: 0 auto;
+                    display: block;
+                    position: initial;
+                    float: none;
+                    border: 5px solid #dfc90b;
+                    padding: 10px 20px;
+                    .p01 {
+                        font-size: 2rem;
+                        text-align: center;
+                    }
+                    .p02 {
+                        font-size: 1.2rem;
+                        text-align: center;
+                    }
+                    form {
+                        input {
+                            width: 75%;
+                            margin: 20px auto 0 auto;
+                            display: block;
+                            font-size: 1rem;
+                        }
+                        .button-wrap {
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
 @media (min-width: 991px) and (max-width: 1199px) {
@@ -709,6 +829,48 @@
                     font-size: 1.2rem;
                     padding: 0 15px;
                     br {display: none;}
+                }
+            }
+        }
+    }
+    #bmw_08 {
+        .odc-wrap {
+            .odc {
+                background-image: none;
+                .car {
+                    display: none;
+                    width: 100%;
+                    margin: 0;
+                    height: 165px;
+                    background-position: center bottom;
+                }
+                .offer {
+                    width: 60%;
+                    margin: 0 auto;
+                    display: block;
+                    position: initial;
+                    float: none;
+                    border: 5px solid #dfc90b;
+                    padding: 10px 20px;
+                    .p01 {
+                        font-size: 2rem;
+                        text-align: center;
+                    }
+                    .p02 {
+                        font-size: 1.2rem;
+                        text-align: center;
+                    }
+                    form {
+                        input {
+                            width: 75%;
+                            margin: 20px auto 0 auto;
+                            display: block;
+                            font-size: 1rem;
+                        }
+                        .button-wrap {
+                            text-align: center;
+                        }
+                    }
                 }
             }
         }

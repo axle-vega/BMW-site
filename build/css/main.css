@@ -1481,7 +1481,6 @@ to{opacity:1}
 }
 .pushy-submenu ul{padding-left:15px}
 .pushy-submenu>a:after{content:'';display:block;height:11px;width:8px;position:absolute;top:50%;right:15px;background:url(img/arrow.svg) no-repeat;-webkit-transform:translateY(-50%);transform:translateY(-50%);-webkit-transition:-webkit-transform .2s;transition:-webkit-transform .2s;transition:transform .2s;transition:transform .2s,-webkit-transform .2s}
-#bmw_03 .bmw-car .item:after,#bmw_04 .blocks .frame:after{content:"";position:absolute}
 .pushy-submenu-open a:after{-webkit-transform:translateY(-50%) rotate(90deg);transform:translateY(-50%) rotate(90deg)}
 #bmw_01 .head-wrap .head .phone a{font-size:1rem}
 #bmw_01 .head-wrap .head .phone p span{font-size:1.125rem}
@@ -1534,7 +1533,7 @@ header .navbar .navbar-right .contact{color:#fff;text-align:right;font-size:1rem
 #bmw_03 .bmw-car .item p{font-size:1.87rem;background:#000;display:inline-block;padding:2px 10px;margin:0}
 #bmw_03 .bmw-car .item a{font-size:1.5rem;text-align:center;text-decoration:underline;cursor:pointer}
 #bmw_04 .blocks .frame a:hover,.pushy a{text-decoration:none}
-#bmw_03 .bmw-car .item:after{background-repeat:no-repeat;background-size:contain;background-position:center}
+#bmw_03 .bmw-car .item:after{content:"";position:absolute;background-repeat:no-repeat;background-size:contain;background-position:center}
 #bmw_03 .bmw-car .d01{margin-left:-70px;margin-top:220px}
 #bmw_03 .bmw-car .d01:after{width:57px;height:53px;background-image:url(../img/arrow-01.png);left:50%;top:100%}
 #bmw_03 .bmw-car .d02{margin-left:170px;margin-top:100px}
@@ -1558,7 +1557,7 @@ header .navbar .navbar-right .contact{color:#fff;text-align:right;font-size:1rem
 #bmw_04 .blocks .frame .p02{font-size:1.5rem;line-height:1;color:#fff;letter-spacing:1px;margin-bottom:15px}
 #bmw_05 .blocks .item p,#bmw_06 .case .right p{letter-spacing:.5px;color:#000}
 #bmw_04 .blocks .frame a{font-size:1.5rem;color:#fff;background:#c52809;border-radius:4px;padding:3px 12px;border:none;cursor:pointer}
-#bmw_04 .blocks .frame:after{width:100%;max-width:620px;height:372px;margin-top:-215px;margin-left:335px;background-image:url(../img/zapchasti.png);background-repeat:no-repeat;background-position:center;background-size:contain}
+#bmw_04 .blocks .frame:after{content:"";width:100%;max-width:620px;height:372px;margin-top:-215px;margin-left:335px;position:absolute;background-image:url(../img/zapchasti.png);background-repeat:no-repeat;background-position:center;background-size:contain}
 #bmw_05{padding-bottom:20px 0}
 #bmw_05 .subtitle{font-size:1.5rem;font-weight:700;text-align:center;text-transform:uppercase;line-height:1;color:#000;margin:25px auto}
 #bmw_05 .subtitle span{background:#000;color:#fff;padding:0 10px}
@@ -1596,6 +1595,16 @@ header .navbar .navbar-right .contact{color:#fff;text-align:right;font-size:1rem
 #bmw_07 .bullets .item:nth-child(4) .block{background-image:url(../img/bull-04.png)}
 #bmw_07 .bullets .item:nth-child(5) .block{background-image:url(../img/bull-05.png)}
 #bmw_07 .bullets .item:nth-child(6) .block{background-image:url(../img/bull-06.png)}
+#bmw_08{padding-top:50px}
+#bmw_08 .odc-wrap{display:table;width:100%}
+#bmw_08 .odc-wrap .odc{display:table-cell;vertical-align:bottom;width:100%;height:100%;background-image:url(../img/bg-01-road.jpg);background-repeat:repeat-x;background-position:bottom center}
+#bmw_08 .odc-wrap .odc .offer{border:10px solid #dfc90b;width:50%;max-width:638px;display:block;float:left;position:absolute;padding:25px}
+#bmw_08 .odc-wrap .odc .offer .p01{color:#000;font-size:2.62rem;font-weight:700;text-transform:uppercase;margin:0}
+#bmw_08 .odc-wrap .odc .offer .p01 .red{color:#c52809}
+#bmw_08 .odc-wrap .odc .offer .p02{font-size:1.5rem;color:#000;line-height:1}
+#bmw_08 .odc-wrap .odc .offer form input{font-size:1.12rem;color:#a4a4a4;background-color:transparent;width:300px;border:1px solid #222;padding:5px 15px;margin-top:10px;margin-bottom:20px}
+#bmw_08 .odc-wrap .odc .offer form button{font-size:1.5rem;color:#fff;background:#c52809;border-radius:4px;padding:3px 12px;border:none}
+#bmw_08 .odc-wrap .odc .car{width:884px;height:388px;background-image:url(../img/bg-01-car.png);background-repeat:no-repeat;background-position:center;background-size:contain;display:block;float:right;position:relative;z-index:100;margin-right:-100px}
 /*! Pushy - v1.0.0 - 2016-3-1
 * Pushy is a responsive off-canvas navigation menu using CSS transforms & transitions.
 * https://github.com/christophery/pushy/
@@ -1693,6 +1702,13 @@ header .bg{height:20px}
 #bmw_07 .bullets .item .block .wrap p{font-size:1.3rem;padding-left:100px}
 #bmw_07 .bullets .item .block .wrap p br{display:none}
 #bmw_07 .bullets .item .block .wrap p span{font-size:1.3rem}
+#bmw_08 .odc-wrap .odc{background-image:none}
+#bmw_08 .odc-wrap .odc .car{width:100%;margin:0;height:165px;background-position:center bottom}
+#bmw_08 .odc-wrap .odc .offer{width:95%;margin:0 auto;display:block;position:initial;float:none;border:5px solid #dfc90b;padding:10px 20px}
+#bmw_08 .odc-wrap .odc .offer .p01{font-size:1.8rem;text-align:center}
+#bmw_08 .odc-wrap .odc .offer .p02{font-size:1.2rem;text-align:center}
+#bmw_08 .odc-wrap .odc .offer form input{width:100%;font-size:1rem}
+#bmw_08 .odc-wrap .odc .offer form .button-wrap{text-align:center}
 }
 @media (min-width:481px) and (max-width:767px){.title{font-size:2rem}
 #menu-container{display:inline-block;float:right;width:40px;height:40px;font-size:1.5rem;text-align:center;padding-top:6px;color:#fff}
@@ -1730,8 +1746,16 @@ header .bg{height:20px}
 #bmw_04 .blocks .frame:after,#bmw_05 .blocks .item p br,#bmw_05 .subtitle br{display:none}
 #bmw_05 .subtitle{margin:15px auto;font-weight:100;text-transform:initial}
 #bmw_05 .blocks .item{margin:15px 0}
+#bmw_08 .odc-wrap .odc{background-image:none}
+#bmw_08 .odc-wrap .odc .car{width:100%;margin:0;height:165px;background-position:center bottom}
+#bmw_08 .odc-wrap .odc .offer{width:95%;margin:0 auto;display:block;position:initial;float:none;border:5px solid #dfc90b;padding:10px 20px}
+#bmw_08 .odc-wrap .odc .offer .p01{font-size:1.8rem;text-align:center}
+#bmw_08 .odc-wrap .odc .offer .p02{font-size:1.2rem;text-align:center}
+#bmw_08 .odc-wrap .odc .offer form input{width:100%;font-size:1rem}
+#bmw_08 .odc-wrap .odc .offer form .button-wrap{text-align:center}
 }
-@media (min-width:768px) and (max-width:990px){.title{font-size:3rem}
+@media (min-width:768px) and (max-width:990px){#bmw_01 .odc-wrap .odc,#bmw_08 .odc-wrap .odc{background-image:none}
+.title{font-size:3rem}
 #menu-container{display:inline-block;float:right;width:40px;height:40px;font-size:1.5rem;text-align:center;padding-top:6px;color:#fff}
 header .bg{height:30px}
 header .navbar{display:block}
@@ -1741,7 +1765,6 @@ header .navbar{display:block}
 #bmw_01 .head-wrap .head h1{font-size:3rem;margin-top:60px}
 #bmw_01 .head-wrap .head h1 span{padding:0 10px}
 #bmw_01 .head-wrap .head .subtitle{font-size:3rem}
-#bmw_01 .odc-wrap .odc{background-image:none}
 #bmw_01 .odc-wrap .odc .car{display:none;width:100%;margin:0;height:165px;background-position:center bottom}
 #bmw_01 .odc-wrap .odc .offer{width:60%;margin:0 auto;display:block;position:initial;float:none;border:5px solid #dfc90b;padding:10px 20px}
 #bmw_01 .odc-wrap .odc .offer .p01{font-size:2rem;text-align:center}
@@ -1765,8 +1788,15 @@ header .navbar{display:block}
 #bmw_05 .blocks .item p,#bmw_05 .subtitle{font-size:1.2rem;padding:0 15px}
 #bmw_05 .subtitle{margin:15px auto;font-weight:100;text-transform:initial}
 #bmw_05 .blocks .item{width:50%;margin:15px 0}
+#bmw_08 .odc-wrap .odc .car{display:none;width:100%;margin:0;height:165px;background-position:center bottom}
+#bmw_08 .odc-wrap .odc .offer{width:60%;margin:0 auto;display:block;position:initial;float:none;border:5px solid #dfc90b;padding:10px 20px}
+#bmw_08 .odc-wrap .odc .offer .p01{font-size:2rem;text-align:center}
+#bmw_08 .odc-wrap .odc .offer .p02{font-size:1.2rem;text-align:center}
+#bmw_08 .odc-wrap .odc .offer form input{width:75%;margin:20px auto 0;display:block;font-size:1rem}
+#bmw_08 .odc-wrap .odc .offer form .button-wrap{text-align:center}
 }
-@media (min-width:991px) and (max-width:1199px){.title{font-size:3rem}
+@media (min-width:991px) and (max-width:1199px){#bmw_01 .odc-wrap .odc,#bmw_08 .odc-wrap .odc{background-image:none}
+.title{font-size:3rem}
 #menu-container{display:inline-block;float:right;width:40px;height:40px;font-size:1.5rem;text-align:center;padding-top:6px;color:#fff}
 header .bg{height:30px}
 header .navbar{display:block}
@@ -1776,7 +1806,6 @@ header .navbar{display:block}
 #bmw_01 .head-wrap .head h1{font-size:3rem;margin-top:60px}
 #bmw_01 .head-wrap .head h1 span{padding:0 10px}
 #bmw_01 .head-wrap .head .subtitle{font-size:3rem}
-#bmw_01 .odc-wrap .odc{background-image:none}
 #bmw_01 .odc-wrap .odc .car{display:none;width:100%;margin:0;height:165px;background-position:center bottom}
 #bmw_01 .odc-wrap .odc .offer{width:60%;margin:0 auto;display:block;position:initial;float:none;border:5px solid #dfc90b;padding:10px 20px}
 #bmw_01 .odc-wrap .odc .offer .p01{font-size:2rem;text-align:center}
@@ -1796,4 +1825,10 @@ header .navbar{display:block}
 #bmw_04 .blocks .frame{margin:30px auto 70px}
 #bmw_05 .subtitle{margin:15px auto;font-weight:100;text-transform:initial}
 #bmw_05 .blocks .item{margin:15px 0}
+#bmw_08 .odc-wrap .odc .car{display:none;width:100%;margin:0;height:165px;background-position:center bottom}
+#bmw_08 .odc-wrap .odc .offer{width:60%;margin:0 auto;display:block;position:initial;float:none;border:5px solid #dfc90b;padding:10px 20px}
+#bmw_08 .odc-wrap .odc .offer .p01{font-size:2rem;text-align:center}
+#bmw_08 .odc-wrap .odc .offer .p02{font-size:1.2rem;text-align:center}
+#bmw_08 .odc-wrap .odc .offer form input{width:75%;margin:20px auto 0;display:block;font-size:1rem}
+#bmw_08 .odc-wrap .odc .offer form .button-wrap{text-align:center}
 }
