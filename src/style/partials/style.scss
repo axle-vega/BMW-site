@@ -15,6 +15,25 @@ body {overflow-x: hidden;}
 a {color: #1f68c3;}
 .cl {clear:both;}
 
+#button-up {
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    padding: 10px 10px 10px;
+    text-align: center;
+    background-color: rgba(0,0,0,.85);
+    border: 1px solid rgba(255,255,255,0.5);
+    cursor: pointer;
+    color: #fff;
+    &:hover {
+        background-color: $yellow;
+        border-color: $yellow;
+        color: #000;
+    }
+}
+
+
+
 .title {
     font-size: 5.62rem;
     text-align: center;
@@ -69,18 +88,19 @@ header {
                 float: right;
                 margin-top: 45px;
                 text-align: right;
-                p {
+                position: relative;
+                .ph-link {
                     @extend %36-f;
                     color: #fff;
                     font-weight: bold;
                     text-align: right;
                     line-height: 1;
                     margin: 0;
-                    span {
-                        @extend %18-f;
-                    }
+                    display: block;
+                    span {@extend %18-f;}
+                    &:hover {text-decoration: none;}
                 }
-                a {
+                .map-link {
                     @extend %16-f;
                     color: $yellow;
                     text-decoration: underline;
@@ -677,5 +697,42 @@ header {
                 margin-right: -100px;
             }
         }        
+    }
+}
+
+#bmw_09 {
+    #map {
+        width: 100%;
+        height: 550px;
+    }
+}
+
+footer {
+    padding: 15px 0;
+    img {
+        width: 100%;
+        max-width: 113px;
+        float: left;
+    }
+    .address {
+        text-align: center;
+        font-size: 1rem;
+        color: #000;
+        letter-spacing: 0.5px;
+        padding-top: 15px;
+    }
+    .phone {
+        font-size: 2.25rem;
+        float: right;
+        color: #000;
+        text-decoration: none;
+        font-weight: bold;
+        span {
+            font-size: 1.12rem;
+            font-weight: 100;
+        }
+        &:hover {
+            text-decoration: none;
+        }
     }
 }
