@@ -10,6 +10,10 @@ $sm-font:       14px !default;
 $yellow:        #dfc90b !default;
 
 html {font-size: $md-font;}
+body {overflow-x: hidden;}
+
+a {color: #1f68c3;}
+.cl {clear:both;}
 
 .title {
     font-size: 5.62rem;
@@ -17,6 +21,7 @@ html {font-size: $md-font;}
     text-transform: uppercase;
     font-weight: bold;
     color: #000;
+    letter-spacing: 1px;
 }
 
 #menu-container {display: none;}
@@ -253,14 +258,186 @@ header {
 
 #bmw_03 {
     padding: 4vh 0;
-    height: 60vh;
+    //height: 60vh;
     .bmw-car {
         width: 100%;
         max-width: 1155px;
-        height: 694px;
-        background-image: url('../img/bg-03.jpg');
-        background-position: center;
+        height: 800px;
+        background-image: url(../img/bg-03.jpg);
+        background-position: center bottom;
         background-repeat: no-repeat;
         background-size: contain;
+        .item {
+            position: absolute;
+            text-align: center;
+            p {
+                font-size: 1.87rem;
+                text-transform: uppercase;
+                font-weight: bold;
+                color: #fff;
+                background: #000;
+                display: inline-block;
+                line-height: 1;
+                padding: 2px 10px;
+                text-align: center;
+                margin: 0;
+            }
+            a {
+                font-size: 1.5rem;
+                text-align: center;
+                text-decoration: underline;
+                cursor: pointer;
+            }
+            &:after {
+                content: "";
+                position: absolute;
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-position: center;
+            }
+        }
+        .d01 {
+            margin-left: -70px;
+            margin-top: 220px;
+            &:after {
+                width: 57px;
+                height: 53px;
+                background-image: url('../img/arrow-01.png');
+                left: 50%;
+                top: 100%;
+            }
+        }
+        .d02 {
+            margin-left: 170px;
+            margin-top: 100px;
+            &:after {
+                width: 22px;
+                height: 54px;
+                background-image: url('../img/arrow-02.png');
+                left: 50%;
+                top: 100%;
+            }
+        }
+        .d03 {
+            margin-left: 480px;
+            margin-top: 20px;
+            &:after {
+                width: 42px;
+                height: 147px;
+                background-image: url('../img/arrow-03.png');
+                left: 50%;
+                top: 100%;
+            }
+        }
+        .d04 {
+            margin-left: 700px;
+            margin-top: 90px;
+            &:after {
+                width: 123px;
+                height: 129px;
+                background-image: url('../img/arrow-04.png');
+                right: 50%;
+                top: 100%;
+            }
+        }
+        .d05 {
+            margin-left: 880px;
+            margin-top: 210px;
+            &:after {
+                width: 57px;
+                height: 53px;
+                background-image: url('../img/arrow-05.png');
+                right: 50%;
+                top: 100%;
+            }
+        }
+    }
+}
+
+#bmw_04 {
+    padding: 4vh 0;
+    .title {
+        margin-top: -150px;
+        margin-bottom: 100px;
+    }
+    .blocks {
+        background-image: url('../img/bg-04.jpg');
+        background-repeat: repeat;
+        .item {
+            margin-top: -55px;
+            img {
+                width: 100%;
+                max-width: 366px;
+                display: block;
+                margin: 0 auto;
+            }
+            p {
+                color: #fff;
+                font-size: 1.87rem;
+                text-transform: uppercase;
+                font-weight: bold;
+                text-align: center;
+                letter-spacing: 1px;
+                line-height: 1;
+                padding: 10px 0;
+                span {
+                    text-transform: lowercase;
+                    font-weight: 100;
+                    font-size: 1.6rem;
+                    display: inline-block;
+                }
+            }
+        }
+        .frame {
+            width: 100%;
+            max-width: 844px;
+            border: 10px #fff solid;
+            display: block;
+            padding: 30px 25px;
+            margin: 30px 0 70px 0;
+            .p01 {
+                text-transform: uppercase;
+                font-size: 2.62rem;
+                color: #fff;
+                font-weight: bold;
+                line-height: 1;
+                letter-spacing: 1px;
+                .yellow {
+                    color: $yellow;
+                }
+            }
+            .p02 {
+                font-size: 1.5rem;
+                line-height: 1;
+                color: #fff;
+                letter-spacing: 1px;
+                margin-bottom: 15px;
+            }
+            a {
+                font-size: 1.5rem;
+                color: #fff;
+                background: #c52809;
+                border-radius: 4px;
+                padding: 3px 12px;
+                border: none;
+                cursor: pointer;
+                &:hover {
+                    text-decoration: none;
+                }
+            }
+            &:after {
+                content: "";
+                width: 100%;
+                max-width: 620px;
+                height: 372px;
+                margin-top: -215px;
+                margin-left: 335px;
+                position: absolute;
+                background-image: url('../img/zapchasti.png');
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: contain;
+            }
+        }
     }
 }

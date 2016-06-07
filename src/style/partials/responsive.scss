@@ -1,5 +1,8 @@
 @media (max-width: 480px) {
-    .title {font-size: 2rem;}
+    .title {
+        font-size: 2rem;
+        line-height: 1;
+    }
     #menu-container {
         display: inline-block;
         float: right;
@@ -91,6 +94,60 @@
                             padding: 0 5px;
                         }
                     }
+                }
+            }
+        }
+    }
+    #bmw_03 {
+        height: initial;
+        .bmw-car {
+            height: initial;
+            background: none;
+            .item {
+                position: inherit;
+                text-align: left;
+                padding-left: 15px;
+                margin: 15px 0;
+                p {
+                    font-size: 1.5rem;
+                    font-weight: 100;
+                }
+                a {
+                    font-size: 1.3rem;
+                }
+                &:after {display: none;}
+            }
+        }
+    }
+    #bmw_04 {
+        .title {
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+        .blocks {
+            padding: 25px 0;
+            .item {
+                margin-top: 0;
+            }
+            .frame {
+                border: 5px solid #fff;
+                padding: 15px;
+                margin: 20px 0;
+                .p01 {
+                    font-size: 1.7rem;
+                }
+                .p02 {
+                    font-size: 1rem;
+                    br {display: none;}
+                }
+                a {
+                    font-size: 1.2rem;
+                    width: 100%;
+                    display: block;
+                    text-align: center;
+                }
+                &:after {
+                    display: none;
                 }
             }
         }
@@ -190,6 +247,60 @@
                             padding: 0 5px;
                         }
                     }
+                }
+            }
+        }
+    }
+    #bmw_03 {
+        height: initial;
+        .bmw-car {
+            height: initial;
+            background: none;
+            .item {
+                position: inherit;
+                text-align: left;
+                padding-left: 15px;
+                margin: 15px 0;
+                p {
+                    font-size: 1.5rem;
+                    font-weight: 100;
+                }
+                a {
+                    font-size: 1.3rem;
+                }
+                &:after {display: none;}
+            }
+        }
+    }
+    #bmw_04 {
+        .title {
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+        .blocks {
+            padding: 25px 0;
+            .item {
+                margin-top: 0;
+            }
+            .frame {
+                border: 5px solid #fff;
+                padding: 15px;
+                margin: 20px 0;
+                .p01 {
+                    font-size: 1.7rem;
+                }
+                .p02 {
+                    font-size: 1rem;
+                    br {display: none;}
+                }
+                a {
+                    font-size: 1.2rem;
+                    width: 100%;
+                    display: block;
+                    text-align: center;
+                }
+                &:after {
+                    display: none;
                 }
             }
         }
@@ -300,6 +411,49 @@
             }
         }
     }
+    #bmw_03 {
+        height: initial;
+        .bmw-car {
+            height: initial;
+            background-position: right bottom;
+            .item {
+                position: inherit;
+                text-align: left;
+                padding-left: 15px;
+                margin: 15px 0;
+                p {
+                    font-size: 1.5rem;
+                    font-weight: 100;
+                }
+                a {
+                    font-size: 1.3rem;
+                }
+                &:after {display: none;}
+            }
+        }
+    }
+    #bmw_04 {
+        .title {
+            margin-top: -60px;
+        }
+        .blocks {
+            .item {
+                width: 33.333%;
+                p {
+                    font-size: 1.4rem;
+                    font-weight: 100;
+                    span {
+                        font-size: 1rem;
+                    }
+                }
+            }
+            .frame {
+                &:after {
+                    display: none;
+                }
+            }
+        }
+    }
 }
 
 @media (min-width: 991px) and (max-width: 1199px) {
@@ -402,6 +556,33 @@
                             padding: 0 5px;
                         }
                     }
+                }
+            }
+        }
+    }
+    #bmw_03 {
+        height: initial;
+        .bmw-car {
+            height: initial;
+            background-position: right bottom;
+            .item {
+                position: inherit;
+                width: 60%;
+                text-align: left;
+                margin: 0 !important;
+                &:after {display: none;}
+            }
+        }
+    }
+    #bmw_04 {
+        .title {
+            margin-top: -60px;
+        }
+        .blocks {
+            .frame {
+                margin: 30px auto 70px auto;
+                &:after {
+                    display: none;
                 }
             }
         }
