@@ -441,3 +441,167 @@ header {
         }
     }
 }
+#bmw_05 {
+    padding-bottom: 20px 0;
+    .subtitle {
+        font-size: 1.5rem;
+        font-weight: bold;
+        text-align: center;
+        text-transform: uppercase;
+        line-height: 1;
+        color: #000;
+        margin: 25px auto;
+        span {
+            background: black;
+            color: #fff;
+            padding: 0 10px;
+        }
+    }
+    .blocks {
+        width: 100%;
+        .item {
+            margin: 20px 0;
+            img {
+                width: 100%;
+                max-width: 120px;
+                display: block;
+                margin: 0 auto;
+            }
+            p {
+                margin: 10px auto;
+                text-align: center;
+                font-size: 1.5rem;
+                line-height: 1;
+                color: #000;
+                letter-spacing: .5px;
+            }
+        }
+    }
+}
+#bmw_06 {
+    padding: 30px 0;
+    background-image: url('../img/bg-06.jpg');
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    .title {
+        margin: 0;
+    }
+    .subtitle {
+        font-size: 1.5rem;
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: bold;
+        color: #000;
+        line-height: 1;
+        margin-bottom: 60px;
+    }
+    .case {
+        margin-bottom: 60px;
+        height: 401px;
+        .left {
+            .image {
+                height: 401px;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            .img1 {background-image: url('../img/case-1.jpg');}
+            .img2 {background-image: url('../img/case-2.jpg');}
+        }
+        .right {
+            height: 401px;
+            background: #fff;
+            box-shadow: 0px 0px 14.49px 6.51px rgba(0, 0, 0, 0.06);
+            p {
+                color: #000;
+                letter-spacing: .5px;
+            }
+            .p01 {
+                background: #337cd7;
+                color: #fff;
+                font-size: 1.12rem;
+                display: inline-block;
+                padding: 5px 15px;
+                line-height: 1;
+                margin-left: -15px;
+                margin-top: 15px;
+            }
+            .p02 {
+                font-size: 2.25rem;
+                font-weight: bold;
+            }
+            .text {
+                font-size: 1.12rem;
+                line-height: 1;
+            }
+            .p03 {
+                font-size: 1.12rem;
+                text-transform: uppercase;
+                font-weight: bold;
+                margin-bottom: 30px;
+                span {
+                    font-size: 2.25rem;
+                    font-weight: bold;
+                    br {display: none;}
+                }
+            }
+            .button {
+                font-size: 1.5rem;
+                color: #fff;
+                background: #c52809;
+                border-radius: 4px;
+                padding: 3px 12px;
+                border: none;
+                cursor: pointer;
+            }
+        }
+    }
+}
+#bmw_07 {
+    padding: 60px 0;
+    background-image: url('../img/bg-07.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    .title {
+        color: #fff;
+        line-height: 1;
+    }
+    .bullets {
+        margin-top: 50px;
+        .item {
+            margin-bottom: 65px;
+            .block {
+                min-height: 115px;
+                background-position: left center;
+                background-repeat: no-repeat;
+                background-size: contain;
+                .wrap {
+                    display: table;
+                    height: 115px;
+                    width: 100%;
+                    p {
+                        display: table-cell;
+                        vertical-align: middle;
+                        height: 100%;
+                        width: 100%;
+                        font-size: 1.87rem;
+                        color: #fff;
+                        padding-left: 150px;
+                        line-height: 1;
+                        span {
+                            font-size: 1.12rem;
+                        }
+                    }
+                }
+            }
+            &:nth-child(1) {.block {background-image: url('../img/bull-01.png');}}
+            &:nth-child(2) {.block {background-image: url('../img/bull-02.png');}}
+            &:nth-child(3) {.block {background-image: url('../img/bull-03.png');}}
+            &:nth-child(4) {.block {background-image: url('../img/bull-04.png');}}
+            &:nth-child(5) {.block {background-image: url('../img/bull-05.png');}}
+            &:nth-child(6) {.block {background-image: url('../img/bull-06.png');}}
+        }
+    }
+}
