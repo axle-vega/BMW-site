@@ -1619,6 +1619,10 @@ footer img{width:100%;max-width:113px;float:left}
 footer .address{text-align:center;font-size:1rem;color:#000;letter-spacing:.5px;padding-top:15px}
 footer .phone{font-size:2.25rem;float:right;color:#000;font-weight:700}
 footer .phone span{font-size:1.12rem;font-weight:100}
+footer .starta{text-align:center}
+footer .starta a{color:#C52809;font-size:16px;vertical-align:middle}
+footer .starta img{float:none;max-width:114px}
+footer .starta:hover a{text-decoration:none;color:#000}
 @media (max-width:480px){.title{font-size:2rem;line-height:1}
 #menu-container{display:inline-block;float:right;width:40px;height:40px;font-size:1.5rem;text-align:center;padding-top:6px;color:#fff}
 #bmw_01 .head-wrap .head .phone,header .navbar{display:none}

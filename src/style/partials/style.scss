@@ -850,4 +850,22 @@ footer {
             text-decoration: none;
         }
     }
+    .starta {
+        text-align: center;
+        a {
+            color: #C52809;
+            font-size: 16px;
+            vertical-align: middle;
+        }
+        img {
+            float: none;
+            max-width: 114px;
+        }
+        &:hover {
+            a {
+                text-decoration: none;
+                color: #000;
+            }
+        }
+    }
 }
