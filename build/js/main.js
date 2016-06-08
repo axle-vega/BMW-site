@@ -2362,4 +2362,3 @@ if (typeof jQuery === 'undefined') {
   })
 
 }(jQuery);
-// partials/device.min.js

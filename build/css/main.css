@@ -1,7 +1,6 @@
 /*! normalize.css v4.1.1 | MIT License | github.com/necolas/normalize.css */
 .label,sub,sup{vertical-align:baseline}
 button,hr,input{overflow:visible}
-.navbar-fixed-bottom .navbar-collapse,.navbar-fixed-top .navbar-collapse,.pre-scrollable{max-height:340px}
 article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary{display:block}
 audio,canvas,progress,video{display:inline-block;vertical-align:baseline}
 a{-webkit-text-decoration-skip:objects;background-color:transparent}
@@ -41,7 +40,7 @@ hr{height:0;-webkit-box-sizing:content-box;-moz-box-sizing:content-box;box-sizin
 pre,textarea{overflow:auto}
 code,kbd,pre,samp{font-size:1em}
 button,input,optgroup,select,textarea{margin:0;font:inherit;color:inherit}
-.glyphicon,address{font-style:normal}
+.glyphicon,.popover,.tooltip,address{font-style:normal}
 button,select{text-transform:none}
 button,html input[type=button],input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer}
 button[disabled],html input[disabled]{cursor:default}
@@ -74,7 +73,6 @@ h2,h3{page-break-after:avoid}
 .img-thumbnail,body{background-color:#fff}
 @font-face{font-family:'Glyphicons Halflings';src:url(../fonts/glyphicons-halflings-regular.eot);src:url(../fonts/glyphicons-halflings-regular.eot?#iefix) format('embedded-opentype'),url(../fonts/glyphicons-halflings-regular.woff2) format('woff2'),url(../fonts/glyphicons-halflings-regular.woff) format('woff'),url(../fonts/glyphicons-halflings-regular.ttf) format('truetype'),url(../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular) format('svg')}
 .glyphicon{position:relative;top:1px;display:inline-block;font-family:'Glyphicons Halflings';font-weight:400;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
-.popover,.tooltip,body{font-family:"PT Sans Narrow",Arial,sans-serif}
 .glyphicon-asterisk:before{content:"\002a"}
 .glyphicon-plus:before{content:"\002b"}
 .glyphicon-eur:before,.glyphicon-euro:before{content:"\20ac"}
@@ -334,7 +332,7 @@ h2,h3{page-break-after:avoid}
 .glyphicon-menu-down:before{content:"\e259"}
 .glyphicon-menu-up:before{content:"\e260"}
 *,:after,:before{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}
-body{margin:0;font-size:14px;line-height:1.42857143;color:#333}
+body{margin:0;font-family:"PT Sans Narrow",Arial,sans-serif;font-size:14px;line-height:1.42857143;color:#333}
 button,input,select,textarea{font-family:inherit;font-size:inherit;line-height:inherit}
 a{text-decoration:none}
 a:focus,a:hover{color:#23527c;text-decoration:underline}
@@ -431,7 +429,7 @@ pre{padding:9.5px;margin:0 0 10px;font-size:13px;word-break:break-all;word-wrap:
 .container,.container-fluid{margin-right:auto;margin-left:auto}
 pre code{padding:0;font-size:inherit;color:inherit;white-space:pre-wrap;border-radius:0}
 .container,.container-fluid{padding-right:15px;padding-left:15px}
-.pre-scrollable{overflow-y:scroll}
+.pre-scrollable{max-height:340px;overflow-y:scroll}
 @media (min-width:992px){.container{width:970px}
 }
 @media (min-width:1200px){.container{width:1136px}
@@ -972,6 +970,7 @@ select[multiple].input-group-sm>.form-control,select[multiple].input-group-sm>.i
 .navbar-fixed-bottom .navbar-collapse,.navbar-fixed-top .navbar-collapse,.navbar-static-top .navbar-collapse{padding-right:0;padding-left:0}
 }
 .embed-responsive,.modal,.modal-open,.progress{overflow:hidden}
+.navbar-fixed-bottom .navbar-collapse,.navbar-fixed-top .navbar-collapse{max-height:340px}
 @media (max-device-width:480px) and (orientation:landscape){.navbar-fixed-bottom .navbar-collapse,.navbar-fixed-top .navbar-collapse{max-height:200px}
 }
 .container-fluid>.navbar-collapse,.container-fluid>.navbar-header,.container>.navbar-collapse,.container>.navbar-header{margin-right:-15px;margin-left:-15px}
@@ -1100,7 +1099,6 @@ select[multiple].input-group-sm>.form-control,select[multiple].input-group-sm>.i
 .pager li>a:focus,.pager li>a:hover{text-decoration:none;background-color:#eee}
 .pager .next>a,.pager .next>span{float:right}
 .pager .previous>a,.pager .previous>span{float:left}
-.close,.list-group-item>.badge{float:right}
 .pager .disabled>a,.pager .disabled>a:focus,.pager .disabled>a:hover,.pager .disabled>span{color:#777;cursor:not-allowed;background-color:#fff}
 a.badge:focus,a.badge:hover,a.label:focus,a.label:hover{color:#fff;cursor:pointer;text-decoration:none}
 .label{display:inline;padding:.2em .6em .3em;font-size:75%;color:#fff;border-radius:.25em}
@@ -1118,11 +1116,12 @@ a.badge:focus,a.badge:hover,a.label:focus,a.label:hover{color:#fff;cursor:pointe
 .label-danger{background-color:#d9534f}
 .label-danger[href]:focus,.label-danger[href]:hover{background-color:#c9302c}
 .badge{display:inline-block;min-width:10px;padding:3px 7px;font-size:12px;color:#fff;vertical-align:middle;background-color:#777;border-radius:10px}
-.badge:empty,.modal{display:none}
+.badge:empty{display:none}
 .media-object,.thumbnail{display:block}
 .btn-group-xs>.btn .badge,.btn-xs .badge{top:0;padding:1px 5px}
 .list-group-item.active>.badge,.nav-pills>.active>a>.badge{color:#337ab7;background-color:#fff}
 .jumbotron,.jumbotron .h1,.jumbotron h1{color:inherit}
+.list-group-item>.badge{float:right}
 .list-group-item>.badge+.badge{margin-right:5px}
 .nav-pills>li>a>.badge{margin-left:3px}
 .jumbotron{padding-top:30px;padding-bottom:30px;margin-bottom:30px;background-color:#eee}
@@ -1299,11 +1298,11 @@ a.list-group-item-danger.active,a.list-group-item-danger.active:focus,a.list-gro
 .well blockquote{border-color:#ddd;border-color:rgba(0,0,0,.15)}
 .well-lg{padding:24px;border-radius:6px}
 .well-sm{padding:9px;border-radius:3px}
-.close{font-size:21px;line-height:1;color:#000;text-shadow:0 1px 0 #fff;filter:alpha(opacity=20);opacity:.2}
-.popover,.tooltip{font-style:normal;font-weight:400;line-height:1.42857143;text-shadow:none;text-transform:none;letter-spacing:normal;word-break:normal;word-spacing:normal;word-wrap:normal;white-space:normal;line-break:auto;text-decoration:none}
+.close{float:right;font-size:21px;line-height:1;color:#000;text-shadow:0 1px 0 #fff;filter:alpha(opacity=20);opacity:.2}
+.popover,.tooltip{font-family:"PT Sans Narrow",Arial,sans-serif;font-weight:400;line-height:1.42857143;text-shadow:none;text-transform:none;letter-spacing:normal;word-break:normal;word-spacing:normal;word-wrap:normal;white-space:normal;line-break:auto;text-decoration:none}
 .close:focus,.close:hover{color:#000;text-decoration:none;cursor:pointer;filter:alpha(opacity=50);opacity:.5}
 button.close{-webkit-appearance:none;padding:0;cursor:pointer;background:0 0;border:0}
-.modal{position:fixed;z-index:1050;-webkit-overflow-scrolling:touch;outline:0}
+.modal{position:fixed;z-index:1050;display:none;-webkit-overflow-scrolling:touch;outline:0}
 .modal.fade .modal-dialog{-webkit-transition:-webkit-transform .3s ease-out;-o-transition:-o-transform .3s ease-out;transition:transform .3s ease-out;-webkit-transform:translate(0,-25%);-ms-transform:translate(0,-25%);-o-transform:translate(0,-25%);transform:translate(0,-25%)}
 .modal.in .modal-dialog{-webkit-transform:translate(0,0);-ms-transform:translate(0,0);-o-transform:translate(0,0);transform:translate(0,0)}
 .modal-open .modal{overflow-x:hidden;overflow-y:auto}
@@ -1396,6 +1395,7 @@ button.close{-webkit-appearance:none;padding:0;cursor:pointer;background:0 0;bor
 .carousel-indicators li{display:inline-block;width:10px;height:10px;margin:1px;text-indent:-999px;cursor:pointer;background-color:#000\9;background-color:rgba(0,0,0,0);border:1px solid #fff;border-radius:10px}
 .carousel-indicators .active{width:12px;height:12px;margin:0;background-color:#fff}
 .carousel-caption{position:absolute;right:15%;bottom:20px;left:15%;z-index:10;padding-top:20px;padding-bottom:20px}
+#button-up,.affix{position:fixed}
 .carousel-caption .btn,.modal-sm .close,.text-hide{text-shadow:none}
 @media screen and (min-width:768px){.carousel-control .glyphicon-chevron-left,.carousel-control .glyphicon-chevron-right,.carousel-control .icon-next,.carousel-control .icon-prev{width:30px;height:30px;margin-top:-10px;font-size:30px}
 .carousel-control .glyphicon-chevron-left,.carousel-control .icon-prev{margin-left:-10px}
@@ -1404,6 +1404,7 @@ button.close{-webkit-appearance:none;padding:0;cursor:pointer;background:0 0;bor
 .carousel-indicators{bottom:20px}
 }
 .btn-group-vertical>.btn-group:after,.btn-group-vertical>.btn-group:before,.btn-toolbar:after,.btn-toolbar:before,.clearfix:after,.clearfix:before,.container-fluid:after,.container-fluid:before,.container:after,.container:before,.dl-horizontal dd:after,.dl-horizontal dd:before,.form-horizontal .form-group:after,.form-horizontal .form-group:before,.modal-footer:after,.modal-footer:before,.modal-header:after,.modal-header:before,.nav:after,.nav:before,.navbar-collapse:after,.navbar-collapse:before,.navbar-header:after,.navbar-header:before,.navbar:after,.navbar:before,.pager:after,.pager:before,.panel-body:after,.panel-body:before,.row:after,.row:before{display:table;content:" "}
+#bmw_03 .bmw-car .item:after,#bmw_04 .blocks .frame:after,.modal-sm .close:after{content:""}
 .center-block{display:block;margin-right:auto;margin-left:auto}
 .pull-right{float:right!important}
 .pull-left{float:left!important}
@@ -1412,7 +1413,6 @@ button.close{-webkit-appearance:none;padding:0;cursor:pointer;background:0 0;bor
 .hidden,.visible-lg,.visible-lg-block,.visible-lg-inline,.visible-lg-inline-block,.visible-md,.visible-md-block,.visible-md-inline,.visible-md-inline-block,.visible-sm,.visible-sm-block,.visible-sm-inline,.visible-sm-inline-block,.visible-xs,.visible-xs-block,.visible-xs-inline,.visible-xs-inline-block{display:none!important}
 .invisible{visibility:hidden}
 .text-hide{font:0/0 a;color:transparent;background-color:transparent;border:0}
-.affix{position:fixed}
 @-ms-viewport{width:device-width}
 @media (max-width:767px){.visible-xs{display:block!important}
 table.visible-xs{display:table!important}
@@ -1469,22 +1469,7 @@ td.visible-print,th.visible-print{display:table-cell!important}
 @media print{.visible-print-inline-block{display:inline-block!important}
 .hidden-print{display:none!important}
 }
-/*! Pushy - v1.0.0 - 2016-3-1
-* Pushy is a responsive off-canvas navigation menu using CSS transforms & transitions.
-* https://github.com/christophery/pushy/
-* by Christopher Yee */
-.pushy-open-left .pushy,.pushy-open-right .pushy{-webkit-transform:translateZ(0);transform:translateZ(0)}
-@keyframes b{0%{opacity:0}
-to{opacity:1}
-}
-@-webkit-keyframes b{0%{opacity:0}
-to{opacity:1}
-}
-.pushy-submenu ul{padding-left:15px}
-.pushy-submenu>a:after{content:'';display:block;height:11px;width:8px;position:absolute;top:50%;right:15px;background:url(img/arrow.svg) no-repeat;-webkit-transform:translateY(-50%);transform:translateY(-50%);-webkit-transition:-webkit-transform .2s;transition:-webkit-transform .2s;transition:transform .2s;transition:transform .2s,-webkit-transform .2s}
-#bmw_03 .bmw-car .item:after,#bmw_04 .blocks .frame:after,.modal-sm .close:after{content:""}
 #button-up,#menu-container{display:none}
-.pushy-submenu-open a:after{-webkit-transform:translateY(-50%) rotate(90deg);transform:translateY(-50%) rotate(90deg)}
 #bmw_01 .head-wrap .head .phone .map-link{font-size:1rem}
 #bmw_01 .head-wrap .head .phone .ph-link span{font-size:1.125rem}
 #bmw_01 .head-wrap .head .phone .ph-link,#bmw_01 .head-wrap .head .subtitle{font-size:2.25rem}
@@ -1492,7 +1477,7 @@ to{opacity:1}
 html{-webkit-tap-highlight-color:transparent;font-size:16px}
 body{overflow-x:hidden}
 a{color:#1f68c3}
-#button-up{position:fixed;width:40px;height:40px;padding:10px;text-align:center;background-color:rgba(0,0,0,.85);border:1px solid rgba(255,255,255,.8);cursor:pointer;color:#fff}
+#button-up{width:40px;height:40px;padding:10px;text-align:center;background-color:rgba(0,0,0,.85);border:1px solid rgba(255,255,255,.8);cursor:pointer;color:#fff}
 header,header .bg{position:absolute}
 #button-up:hover{background-color:#dfc90b;border-color:#dfc90b;color:#000}
 .modal-sm{width:100%;max-width:430px}
@@ -1552,7 +1537,7 @@ header .navbar .navbar-right .contact{color:#fff;text-align:right;font-size:1rem
 #bmw_03 .bmw-car .item{position:absolute;text-align:center}
 #bmw_03 .bmw-car .item p{font-size:1.87rem;background:#000;display:inline-block;padding:2px 10px;margin:0}
 #bmw_03 .bmw-car .item a{font-size:1.5rem;text-align:center;text-decoration:underline;cursor:pointer}
-#bmw_04 .blocks .frame a:hover,#bmw_06 .case .right .button:hover,.pushy a,footer .phone,footer .phone:hover{text-decoration:none}
+#bmw_04 .blocks .frame a:hover,#bmw_06 .case .right .button:hover,footer .phone,footer .phone:hover{text-decoration:none}
 #bmw_03 .bmw-car .item:after{position:absolute;background-repeat:no-repeat;background-size:contain;background-position:center}
 #bmw_03 .bmw-car .d01{margin-left:-70px;margin-top:220px}
 #bmw_03 .bmw-car .d01:after{width:57px;height:53px;background-image:url(../img/arrow-01.png);left:50%;top:100%}
@@ -1631,56 +1616,6 @@ footer img{width:100%;max-width:113px;float:left}
 footer .address{text-align:center;font-size:1rem;color:#000;letter-spacing:.5px;padding-top:15px}
 footer .phone{font-size:2.25rem;float:right;color:#000;font-weight:700}
 footer .phone span{font-size:1.12rem;font-weight:100}
-/*! Pushy - v1.0.0 - 2016-3-1
-* Pushy is a responsive off-canvas navigation menu using CSS transforms & transitions.
-* https://github.com/christophery/pushy/
-* by Christopher Yee */
-.pushy{position:fixed;width:230px;height:100%;top:0;padding-top:60px;z-index:9999;background:#191918;overflow:auto;visibility:hidden;-webkit-overflow-scrolling:touch}
-.pushy .menu-btn{margin-top:-50px;border:none}
-.pushy .menu-list{z-index:100;position:relative}
-.pushy a{display:block;color:#fff;padding:7px 20px;outline:0;line-height:1.1;font-size:1.4rem;background:#000}
-.pushy a:hover{color:#FFF}
-.pushy ul{list-style:none;padding:0}
-.pushy ul:first-child{margin-top:10px}
-.pushy ul li{padding:3px 0 0 10px}
-.pushy.pushy-left{left:0}
-.pushy.pushy-right{right:0}
-.pushy-left{-webkit-transform:translate3d(-230px,0,0);transform:translate3d(-230px,0,0)}
-.pushy-open-left #container,.pushy-open-left .push,.pushy-right{-webkit-transform:translate3d(230px,0,0);transform:translate3d(230px,0,0)}
-.pushy-open-right #container,.pushy-open-right .push{-webkit-transform:translate3d(-230px,0,0);transform:translate3d(-230px,0,0)}
-.pushy-open-left .pushy,.pushy-open-right .pushy{-webkit-transform:translate3d(0,0,0);transform:translate3d(0,0,0)}
-#container,.push,.pushy{-webkit-transition:-webkit-transform .2s cubic-bezier(.16,.68,.43,.99);transition:-webkit-transform .2s cubic-bezier(.16,.68,.43,.99);transition:transform .2s cubic-bezier(.16,.68,.43,.99);transition:transform .2s cubic-bezier(.16,.68,.43,.99),-webkit-transform .2s cubic-bezier(.16,.68,.43,.99)}
-.site-overlay{display:none}
-.pushy-open-left .site-overlay,.pushy-open-right .site-overlay{display:block;position:fixed;top:0;right:0;bottom:0;left:0;z-index:9998;background-color:rgba(0,0,0,.5);-webkit-animation:fade .5s;animation:fade .5s}
-@keyframes fade{0%{opacity:0}
-100%{opacity:1}
-}
-@-webkit-keyframes fade{0%{opacity:0}
-100%{opacity:1}
-}
-.pushy-submenu ul{-webkit-transition:max-height .2s ease-in-out;transition:max-height .2s ease-in-out}
-.pushy-submenu ul .pushy-link{-webkit-transition:opacity .2s ease-in-out;transition:opacity .2s ease-in-out}
-.pushy-submenu>a{position:relative}
-.pushy-submenu>a::after{content:'';display:block;height:11px;width:8px;position:absolute;top:50%;right:15px;background:url(../img/arrow.svg) no-repeat;-webkit-transform:translateY(-50%);transform:translateY(-50%);-webkit-transition:-webkit-transform .2s;transition:-webkit-transform .2s;transition:transform .2s;transition:transform .2s,-webkit-transform .2s}
-.pushy-submenu-closed ul{max-height:0;overflow:hidden}
-.pushy-submenu-closed .pushy-link{opacity:0}
-.pushy-submenu-open ul{max-height:1000px}
-.pushy-submenu-open .pushy-link{opacity:1}
-.pushy-submenu-open a::after{-webkit-transform:translateY(-50%) rotate(90deg);transform:translateY(-50%) rotate(90deg)}
-.no-csstransforms3d .pushy-submenu-closed ul{max-height:none;display:none}
-.pushy-open-right .pushy{box-shadow:-2px 0 60px 4px #F12D23}
-.pushy-contacts{position:absolute;bottom:15px;width:100%;z-index:10}
-.pushy-contacts .phone a{background:0 0;text-align:right;font-size:1.9rem}
-.pushy-contacts .phone a span{font-size:1.15rem}
-.pushy-contacts .socials{width:100%}
-.pushy-contacts .socials p{color:#ADADAD;text-align:right;padding:0 20px;margin-top:10px;margin-bottom:5px;font-size:1.3rem}
-.pushy-contacts .socials ul{margin:0;padding:0 20px 0 10px;list-style:none}
-.pushy-contacts .socials ul li{display:inline-block;float:right}
-.pushy-contacts .socials ul li a{background-repeat:no-repeat;background-position:center;background-size:contain;width:35px;height:35px;padding:0;margin:0;display:block;background-color:transparent;opacity:.85}
-.pushy-contacts .socials ul li .vk{background-image:url(../img/svg/vk-social-logotype.svg)}
-.pushy-contacts .socials ul li .fb{background-image:url(../img/svg/facebook-circular-logo.svg)}
-.pushy-contacts .socials ul li .inst{background-image:url(../img/svg/instagram-logo.svg)}
-.pushy-contacts .socials ul li .ok{background-image:url(../img/svg/odnoklassniki-logo.svg)}
 @media (max-width:480px){.title{font-size:2rem;line-height:1}
 #menu-container{display:inline-block;float:right;width:40px;height:40px;font-size:1.5rem;text-align:center;padding-top:6px;color:#fff}
 #bmw_01 .head-wrap .head .phone,header .navbar{display:none}
