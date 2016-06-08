@@ -74,6 +74,7 @@ h2,h3{page-break-after:avoid}
 .img-thumbnail,body{background-color:#fff}
 @font-face{font-family:'Glyphicons Halflings';src:url(../fonts/glyphicons-halflings-regular.eot);src:url(../fonts/glyphicons-halflings-regular.eot?#iefix) format('embedded-opentype'),url(../fonts/glyphicons-halflings-regular.woff2) format('woff2'),url(../fonts/glyphicons-halflings-regular.woff) format('woff'),url(../fonts/glyphicons-halflings-regular.ttf) format('truetype'),url(../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular) format('svg')}
 .glyphicon{position:relative;top:1px;display:inline-block;font-family:'Glyphicons Halflings';font-weight:400;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
+.popover,.tooltip,body{font-family:"PT Sans Narrow",Arial,sans-serif}
 .glyphicon-asterisk:before{content:"\002a"}
 .glyphicon-plus:before{content:"\002b"}
 .glyphicon-eur:before,.glyphicon-euro:before{content:"\20ac"}
@@ -333,7 +334,7 @@ h2,h3{page-break-after:avoid}
 .glyphicon-menu-down:before{content:"\e259"}
 .glyphicon-menu-up:before{content:"\e260"}
 *,:after,:before{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}
-body{margin:0;font-family:"PT Sans Narrow",Arial,sans-serif;font-size:14px;line-height:1.42857143;color:#333}
+body{margin:0;font-size:14px;line-height:1.42857143;color:#333}
 button,input,select,textarea{font-family:inherit;font-size:inherit;line-height:inherit}
 a{text-decoration:none}
 a:focus,a:hover{color:#23527c;text-decoration:underline}
@@ -970,7 +971,7 @@ select[multiple].input-group-sm>.form-control,select[multiple].input-group-sm>.i
 .navbar-collapse.in{overflow-y:visible}
 .navbar-fixed-bottom .navbar-collapse,.navbar-fixed-top .navbar-collapse,.navbar-static-top .navbar-collapse{padding-right:0;padding-left:0}
 }
-.carousel-inner,.embed-responsive,.modal,.modal-open,.progress{overflow:hidden}
+.embed-responsive,.modal,.modal-open,.progress{overflow:hidden}
 @media (max-device-width:480px) and (orientation:landscape){.navbar-fixed-bottom .navbar-collapse,.navbar-fixed-top .navbar-collapse{max-height:200px}
 }
 .container-fluid>.navbar-collapse,.container-fluid>.navbar-header,.container>.navbar-collapse,.container>.navbar-header{margin-right:-15px;margin-left:-15px}
@@ -1099,6 +1100,7 @@ select[multiple].input-group-sm>.form-control,select[multiple].input-group-sm>.i
 .pager li>a:focus,.pager li>a:hover{text-decoration:none;background-color:#eee}
 .pager .next>a,.pager .next>span{float:right}
 .pager .previous>a,.pager .previous>span{float:left}
+.close,.list-group-item>.badge{float:right}
 .pager .disabled>a,.pager .disabled>a:focus,.pager .disabled>a:hover,.pager .disabled>span{color:#777;cursor:not-allowed;background-color:#fff}
 a.badge:focus,a.badge:hover,a.label:focus,a.label:hover{color:#fff;cursor:pointer;text-decoration:none}
 .label{display:inline;padding:.2em .6em .3em;font-size:75%;color:#fff;border-radius:.25em}
@@ -1116,12 +1118,11 @@ a.badge:focus,a.badge:hover,a.label:focus,a.label:hover{color:#fff;cursor:pointe
 .label-danger{background-color:#d9534f}
 .label-danger[href]:focus,.label-danger[href]:hover{background-color:#c9302c}
 .badge{display:inline-block;min-width:10px;padding:3px 7px;font-size:12px;color:#fff;vertical-align:middle;background-color:#777;border-radius:10px}
-.badge:empty{display:none}
+.badge:empty,.modal{display:none}
 .media-object,.thumbnail{display:block}
 .btn-group-xs>.btn .badge,.btn-xs .badge{top:0;padding:1px 5px}
 .list-group-item.active>.badge,.nav-pills>.active>a>.badge{color:#337ab7;background-color:#fff}
 .jumbotron,.jumbotron .h1,.jumbotron h1{color:inherit}
-.list-group-item>.badge{float:right}
 .list-group-item>.badge+.badge{margin-right:5px}
 .nav-pills>li>a>.badge{margin-left:3px}
 .jumbotron{padding-top:30px;padding-bottom:30px;margin-bottom:30px;background-color:#eee}
@@ -1188,7 +1189,7 @@ to{background-position:0 0}
 .media-right,.media>.pull-right{padding-left:10px}
 .media-left,.media>.pull-left{padding-right:10px}
 .media-body,.media-left,.media-right{display:table-cell;vertical-align:top}
-.media-middle{vertical-align:middle}
+#order-ok .wrap .text,.media-middle{vertical-align:middle}
 .media-bottom{vertical-align:bottom}
 .media-heading{margin-top:0;margin-bottom:5px}
 .media-list{padding-left:0;list-style:none}
@@ -1298,16 +1299,16 @@ a.list-group-item-danger.active,a.list-group-item-danger.active:focus,a.list-gro
 .well blockquote{border-color:#ddd;border-color:rgba(0,0,0,.15)}
 .well-lg{padding:24px;border-radius:6px}
 .well-sm{padding:9px;border-radius:3px}
-.close{float:right;font-size:21px;line-height:1;color:#000;text-shadow:0 1px 0 #fff;filter:alpha(opacity=20);opacity:.2}
-.popover,.tooltip{font-family:"PT Sans Narrow",Arial,sans-serif;font-style:normal;font-weight:400;line-height:1.42857143;text-shadow:none;text-transform:none;letter-spacing:normal;word-break:normal;word-spacing:normal;word-wrap:normal;white-space:normal;line-break:auto;text-decoration:none}
+.close{font-size:21px;line-height:1;color:#000;text-shadow:0 1px 0 #fff;filter:alpha(opacity=20);opacity:.2}
+.popover,.tooltip{font-style:normal;font-weight:400;line-height:1.42857143;text-shadow:none;text-transform:none;letter-spacing:normal;word-break:normal;word-spacing:normal;word-wrap:normal;white-space:normal;line-break:auto;text-decoration:none}
 .close:focus,.close:hover{color:#000;text-decoration:none;cursor:pointer;filter:alpha(opacity=50);opacity:.5}
 button.close{-webkit-appearance:none;padding:0;cursor:pointer;background:0 0;border:0}
-.modal{position:fixed;z-index:1050;display:none;-webkit-overflow-scrolling:touch;outline:0}
+.modal{position:fixed;z-index:1050;-webkit-overflow-scrolling:touch;outline:0}
 .modal.fade .modal-dialog{-webkit-transition:-webkit-transform .3s ease-out;-o-transition:-o-transform .3s ease-out;transition:transform .3s ease-out;-webkit-transform:translate(0,-25%);-ms-transform:translate(0,-25%);-o-transform:translate(0,-25%);transform:translate(0,-25%)}
 .modal.in .modal-dialog{-webkit-transform:translate(0,0);-ms-transform:translate(0,0);-o-transform:translate(0,0);transform:translate(0,0)}
 .modal-open .modal{overflow-x:hidden;overflow-y:auto}
 .modal-dialog{position:relative;width:auto;margin:10px}
-.modal-content{position:relative;background-color:#fff;-webkit-background-clip:padding-box;background-clip:padding-box;border:1px solid #999;border:1px solid rgba(0,0,0,.2);border-radius:6px;outline:0;-webkit-box-shadow:0 3px 9px rgba(0,0,0,.5);box-shadow:0 3px 9px rgba(0,0,0,.5)}
+.modal-content{position:relative;background-color:#fff;-webkit-background-clip:padding-box;background-clip:padding-box;outline:0;-webkit-box-shadow:0 3px 9px rgba(0,0,0,.5)}
 .modal-backdrop{position:fixed;z-index:1040;background-color:#000}
 .modal-backdrop.fade{filter:alpha(opacity=0);opacity:0}
 .modal-backdrop.in{filter:alpha(opacity=95);opacity:.95}
@@ -1365,7 +1366,7 @@ button.close{-webkit-appearance:none;padding:0;cursor:pointer;background:0 0;bor
 .popover.bottom>.arrow:after{top:1px;margin-left:-10px;content:" ";border-top-width:0;border-bottom-color:#fff}
 .popover.left>.arrow{top:50%;right:-11px;margin-top:-11px;border-right-width:0;border-left-color:#999;border-left-color:rgba(0,0,0,.25)}
 .popover.left>.arrow:after{right:1px;border-right-width:0;border-left-color:#fff}
-.carousel-inner{width:100%}
+.carousel-inner{width:100%;overflow:hidden}
 .carousel-inner>.item{position:relative;display:none;-webkit-transition:.6s ease-in-out left;-o-transition:.6s ease-in-out left;transition:.6s ease-in-out left}
 .carousel-inner>.item>a>img,.carousel-inner>.item>img{line-height:1}
 @media all and (transform-3d),(-webkit-transform-3d){.carousel-inner>.item{-webkit-transition:-webkit-transform .6s ease-in-out;-o-transition:-o-transform .6s ease-in-out;transition:transform .6s ease-in-out;-webkit-backface-visibility:hidden;backface-visibility:hidden;-webkit-perspective:1000px;perspective:1000px}
@@ -1395,7 +1396,7 @@ button.close{-webkit-appearance:none;padding:0;cursor:pointer;background:0 0;bor
 .carousel-indicators li{display:inline-block;width:10px;height:10px;margin:1px;text-indent:-999px;cursor:pointer;background-color:#000\9;background-color:rgba(0,0,0,0);border:1px solid #fff;border-radius:10px}
 .carousel-indicators .active{width:12px;height:12px;margin:0;background-color:#fff}
 .carousel-caption{position:absolute;right:15%;bottom:20px;left:15%;z-index:10;padding-top:20px;padding-bottom:20px}
-.carousel-caption .btn,.text-hide{text-shadow:none}
+.carousel-caption .btn,.modal-sm .close,.text-hide{text-shadow:none}
 @media screen and (min-width:768px){.carousel-control .glyphicon-chevron-left,.carousel-control .glyphicon-chevron-right,.carousel-control .icon-next,.carousel-control .icon-prev{width:30px;height:30px;margin-top:-10px;font-size:30px}
 .carousel-control .glyphicon-chevron-left,.carousel-control .icon-prev{margin-left:-10px}
 .carousel-control .glyphicon-chevron-right,.carousel-control .icon-next{margin-right:-10px}
@@ -1481,6 +1482,8 @@ to{opacity:1}
 }
 .pushy-submenu ul{padding-left:15px}
 .pushy-submenu>a:after{content:'';display:block;height:11px;width:8px;position:absolute;top:50%;right:15px;background:url(img/arrow.svg) no-repeat;-webkit-transform:translateY(-50%);transform:translateY(-50%);-webkit-transition:-webkit-transform .2s;transition:-webkit-transform .2s;transition:transform .2s;transition:transform .2s,-webkit-transform .2s}
+#bmw_03 .bmw-car .item:after,#bmw_04 .blocks .frame:after,.modal-sm .close:after{content:""}
+#button-up,#menu-container{display:none}
 .pushy-submenu-open a:after{-webkit-transform:translateY(-50%) rotate(90deg);transform:translateY(-50%) rotate(90deg)}
 #bmw_01 .head-wrap .head .phone .map-link{font-size:1rem}
 #bmw_01 .head-wrap .head .phone .ph-link span{font-size:1.125rem}
@@ -1489,15 +1492,28 @@ to{opacity:1}
 html{-webkit-tap-highlight-color:transparent;font-size:16px}
 body{overflow-x:hidden}
 a{color:#1f68c3}
-#button-up{position:fixed;width:40px;height:40px;padding:10px;text-align:center;background-color:rgba(0,0,0,.85);border:1px solid rgba(255,255,255,.5);cursor:pointer;color:#fff}
+#button-up{position:fixed;width:40px;height:40px;padding:10px;text-align:center;background-color:rgba(0,0,0,.85);border:1px solid rgba(255,255,255,.8);cursor:pointer;color:#fff}
 header,header .bg{position:absolute}
 #button-up:hover{background-color:#dfc90b;border-color:#dfc90b;color:#000}
+.modal-sm{width:100%;max-width:430px}
+.modal-sm .close{margin-top:-35px;float:right;font-size:14px;line-height:1;font-weight:100;text-decoration:underline;text-transform:uppercase;color:#fff;opacity:1;cursor:pointer}
+.modal-sm .close:after{position:absolute;width:30px;height:30px;background-image:url(../img/close-modal.png);background-repeat:no-repeat;background-position:center;background-size:contain;margin-top:-7px;margin-left:4px}
+.modal-sm .close:hover{color:#fff;text-decoration:none;opacity:1}
+.modal-content{background:#000;border:17px solid #fff;width:100%;max-width:430px;box-shadow:none;border-radius:0;padding:40px;margin-top:30%}
+.modal-content .title{font-size:2.62rem;color:#fff;text-align:left;line-height:1.1}
+.modal-content .subtitle{font-size:1.5rem;color:#fff;text-align:left;line-height:1.1;letter-spacing:.5px}
+.modal-content .input{font-size:1.12rem;color:#a4a4a4;letter-spacing:1px;background:#000;border:1px solid #ddd;padding:6px 12px;width:100%;margin-bottom:15px}
+.modal-content .button{font-size:1.5rem;background:#c52809;border:none;border-radius:4px;color:#fff;padding:3px 14px}
+#bmw_01,#order-ok{background-image:url(../img/bg-01.jpg);background-repeat:no-repeat;background-position:center top;background-size:cover}
 .title{font-size:5.62rem;text-align:center;text-transform:uppercase;font-weight:700;color:#000;letter-spacing:1px}
-#menu-container{display:none}
 header{width:100%}
 header .bg{width:100%;height:29px;background-color:#000;opacity:.83}
 header .navbar .navbar-right .contact{color:#fff;text-align:right;font-size:1rem;padding:3px 0}
-#bmw_01{background-image:url(../img/bg-01.jpg);background-repeat:no-repeat;background-position:center top;background-size:cover}
+#order-ok{min-height:100vh}
+#order-ok .wrap{display:table;height:100vh}
+#order-ok .wrap .text{display:table-cell;height:100%;width:100%}
+#order-ok .wrap .text .title{color:#fff;line-height:1}
+#order-ok .wrap .text .subtitle{color:#fff;text-align:center;font-size:2.25rem}
 #bmw_01 .head-wrap{display:table;width:100%;padding-bottom:25px}
 #bmw_01 .head-wrap .head{display:table-cell;vertical-align:bottom;height:100%;width:100%}
 #bmw_01 .head-wrap .head .phone{display:block;float:right;margin-top:45px;text-align:right;position:relative}
@@ -1536,8 +1552,8 @@ header .navbar .navbar-right .contact{color:#fff;text-align:right;font-size:1rem
 #bmw_03 .bmw-car .item{position:absolute;text-align:center}
 #bmw_03 .bmw-car .item p{font-size:1.87rem;background:#000;display:inline-block;padding:2px 10px;margin:0}
 #bmw_03 .bmw-car .item a{font-size:1.5rem;text-align:center;text-decoration:underline;cursor:pointer}
-#bmw_04 .blocks .frame a:hover,.pushy a,footer .phone,footer .phone:hover{text-decoration:none}
-#bmw_03 .bmw-car .item:after{content:"";position:absolute;background-repeat:no-repeat;background-size:contain;background-position:center}
+#bmw_04 .blocks .frame a:hover,#bmw_06 .case .right .button:hover,.pushy a,footer .phone,footer .phone:hover{text-decoration:none}
+#bmw_03 .bmw-car .item:after{position:absolute;background-repeat:no-repeat;background-size:contain;background-position:center}
 #bmw_03 .bmw-car .d01{margin-left:-70px;margin-top:220px}
 #bmw_03 .bmw-car .d01:after{width:57px;height:53px;background-image:url(../img/arrow-01.png);left:50%;top:100%}
 #bmw_03 .bmw-car .d02{margin-left:170px;margin-top:100px}
@@ -1561,7 +1577,7 @@ header .navbar .navbar-right .contact{color:#fff;text-align:right;font-size:1rem
 #bmw_04 .blocks .frame .p02{font-size:1.5rem;line-height:1;color:#fff;letter-spacing:1px;margin-bottom:15px}
 #bmw_05 .blocks .item p,#bmw_06 .case .right p{letter-spacing:.5px;color:#000}
 #bmw_04 .blocks .frame a{font-size:1.5rem;color:#fff;background:#c52809;border-radius:4px;padding:3px 12px;border:none;cursor:pointer}
-#bmw_04 .blocks .frame:after{content:"";width:100%;max-width:620px;height:372px;margin-top:-215px;margin-left:335px;position:absolute;background-image:url(../img/zapchasti.png);background-repeat:no-repeat;background-position:center;background-size:contain}
+#bmw_04 .blocks .frame:after{width:100%;max-width:620px;height:372px;margin-top:-215px;margin-left:335px;position:absolute;background-image:url(../img/zapchasti.png);background-repeat:no-repeat;background-position:center;background-size:contain}
 #bmw_05{padding-bottom:20px 0}
 #bmw_05 .subtitle{font-size:1.5rem;font-weight:700;text-align:center;text-transform:uppercase;line-height:1;color:#000;margin:25px auto}
 #bmw_05 .subtitle span{background:#000;color:#fff;padding:0 10px}
@@ -1668,6 +1684,10 @@ footer .phone span{font-size:1.12rem;font-weight:100}
 @media (max-width:480px){.title{font-size:2rem;line-height:1}
 #menu-container{display:inline-block;float:right;width:40px;height:40px;font-size:1.5rem;text-align:center;padding-top:6px;color:#fff}
 #bmw_01 .head-wrap .head .phone,header .navbar{display:none}
+.modal-sm .close{margin-right:50px}
+.modal-dialog{margin:0}
+.modal-content{border:none;padding:20px}
+.modal-content .title{font-size:2.2rem}
 header .bg{height:20px}
 #bmw_01 .head-wrap{padding-bottom:5px}
 #bmw_01 .head-wrap .head h1{font-size:2rem;margin-top:35px}
