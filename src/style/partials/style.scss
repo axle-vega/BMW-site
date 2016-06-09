@@ -850,6 +850,17 @@ footer {
             text-decoration: none;
         }
     }
+    .flamp {
+        display: block;
+        float: right;
+        width: 100%;
+        text-align: right;
+        img {
+            float: right;
+            width: 90px;
+            margin-right: 50px;
+        }
+    }
     .starta {
         text-align: center;
         a {

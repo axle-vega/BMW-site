@@ -1619,6 +1619,8 @@ footer img{width:100%;max-width:113px;float:left}
 footer .address{text-align:center;font-size:1rem;color:#000;letter-spacing:.5px;padding-top:15px}
 footer .phone{font-size:2.25rem;float:right;color:#000;font-weight:700}
 footer .phone span{font-size:1.12rem;font-weight:100}
+footer .flamp{display:block;float:right;width:100%;text-align:right}
+footer .flamp img{float:right;width:90px;margin-right:50px}
 footer .starta{text-align:center}
 footer .starta a{color:#C52809;font-size:16px;vertical-align:middle}
 footer .starta img{float:none;max-width:114px}
